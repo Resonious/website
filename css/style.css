@@ -1,0 +1,32 @@
+body {
+    background-color: #dcfffd;
+    text-shadow: 0.1em 0.1em white;
+}
+
+.site-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.site-header > .info {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: left;
+    font-family: 'Play', sans-serif;
+}
+
+h1 {
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    padding: 0.05em;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 5em;
+
+    background-color: #ffffff;
+
+    text-shadow: 0.05em 0.05em #f5f5dc;
+
+    border: 0.01em solid black;
+}

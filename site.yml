@@ -3,3 +3,10 @@ pretty: true
 greeting: why hello there
 nested:
   whyNot: yes!!
+
+# Header stuff
+fullName: Nigel Baillie
+bulletPoints:
+  - Software engineer
+  - University of Michigan student
+  - Video game enthusiast
