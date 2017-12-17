@@ -1,3 +1,5 @@
 ---
 pretty: true
 greeting: why hello there
+nested:
+  whyNot: yes!!
