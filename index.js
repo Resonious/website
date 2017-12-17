@@ -12,7 +12,7 @@ try { fs.mkdirSync(buildPath); } catch(_e) {}
 
 // Grab site data
 let site = yaml.safeLoad(fs.readFileSync(`${__dirname}/site.yml`, 'utf8'));
-site.basedir = `${buildPath}/shared`;
+site.basedir = `${__dirname}/shared`;
 console.log(__dirname);
 
 glob("pug/**/*.pug", function (er, files) {
