@@ -3,6 +3,9 @@
     "description": "only the best site",
     "version": "0.0.0",
     "dependencies": {
-        "pug": "^2.0.0-rc.4"
+        "glob": "^7.1.2",
+        "js-yaml": "^3.10.0",
+        "pug": "^2.0.0-rc.4",
+        "rimraf": "^2.6.2"
     }
 }
