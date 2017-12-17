@@ -15,7 +15,8 @@ let site = yaml.safeLoad(fs.readFileSync(`${__dirname}/site.yml`, 'utf8'));
 site.basedir = `${__dirname}/shared`;
 console.log(__dirname);
 
-glob("pug/**/*.pug", function (er, files) {
+// Go through all the pug files and render them
+glob("pug/**/*.pug", (er, files) => {
     files.forEach(file => {
         let newFile = file.replace("pug/", "build/").replace(".pug", ".html");
         console.log(`Compiling ${file} ...`);
@@ -29,4 +30,15 @@ glob("pug/**/*.pug", function (er, files) {
             }
         });
     });
-})
+});
+
+// Copy over all css files
+glob("css/**/*.css", (er, files) => {
+    files.forEach(file => {
+        console.log(`Copying ${file} ...`);
+        let newFile = file.replace("css/", "build/");
+        fs.copyFile(file, newFile, () => {
+            console.log(`Finished ${file}`);
+        });
+    });
+});
