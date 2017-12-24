@@ -2,12 +2,7 @@
 # Pug options
 pretty: true
 
-# Test stuff
-greeting: why hello there
-nested:
-  whyNot: yes!!
-
-# Header stuff
+# Header info
 fullName: Nigel Baillie
 bulletPoints:
   - Software engineer
