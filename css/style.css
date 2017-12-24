@@ -75,7 +75,7 @@ h2 {
 
     border: 3px solid black;
 
-    transition-property: font-size, width, height;
+    transition-property: font-size, margin, width, height;
     transition-duration: 0.3s;
 }
 
@@ -85,4 +85,5 @@ h2 {
 
 .project:hover {
     font-size: 1.1em;
+    margin: 0em;
 }
