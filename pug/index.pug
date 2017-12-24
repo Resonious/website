@@ -8,6 +8,9 @@ html(lang="en")
         
         .projects
             each project in projects
-                a.project(href=project.image, style=`background-image: url(${project.image})`)
+                a.project(
+                    href=project.image,
+                    style=`background-image: url(${project.image}); background-position: center ${project.imageAnchor || 'center'}`
+                )
                     h2= project.name
                     p= project.logline

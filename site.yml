@@ -3,7 +3,8 @@
 pretty: true
 
 # Header info
-fullName: Nigel Baillie
+firstName: Nigel
+lastName: Baillie
 bulletPoints:
   - Software engineer
   - University of Michigan student
@@ -12,9 +13,16 @@ bulletPoints:
 # Project entries
 projects:
   - name: Gray Area
-    logline: Really bad video game
-    image: images/gray-area.webp
+    logline: Navigate the world and its inverse.
+    image: images/gray-area-preview.webp
+    imageAnchor: center
 
   - name: A Duel with The Devil
-    logline: Really good video game
-    image: images/dwtd.webp
+    logline: Side-view grid-based tactical combat.
+    image: images/dwtd-preview.webp
+    imageAnchor: center
+
+  - name: Breaker
+    logline: Punch blocks until you die.
+    image: images/breaker-preview.webp
+    imageAnchor: bottom

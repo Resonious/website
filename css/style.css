@@ -62,7 +62,6 @@ h2 {
     background-color: #c7c7c7;
     margin: 0;
     background-repeat:no-repeat;
-    background-position: center center;
 
     color: black;
     text-decoration: none;
@@ -77,6 +76,10 @@ h2 {
 
     transition-property: font-size, margin, width, height;
     transition-duration: 0.3s;
+}
+
+.project p {
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 .project:hover h2 {

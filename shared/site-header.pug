@@ -1,7 +1,7 @@
 .site-header
     .banner
-        img(src="/images/portrait-sm.webp", alt="(Portrait of Nigel)", width="90px", height="94px")
-        h1= fullName
+        img(src="/images/portrait-sm.webp", alt=firstName, width="90px", height="94px")
+        h1= `${firstName} ${lastName}`
     .info
         each point in bulletPoints
             span= point
