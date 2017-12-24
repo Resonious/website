@@ -9,6 +9,7 @@ const buildPath = `${__dirname}/build`;
 // Clean/create build directory
 try { rimraf.sync(buildPath); } catch(_e) {}
 try { fs.mkdirSync(buildPath); } catch(_e) {}
+try { fs.mkdirSync(`${buildPath}/images`); } catch(_e) {}
 
 // Grab site data
 let site = yaml.safeLoad(fs.readFileSync(`${__dirname}/site.yml`, 'utf8'));
@@ -37,6 +38,17 @@ glob("css/**/*.css", (er, files) => {
     files.forEach(file => {
         console.log(`Copying ${file} ...`);
         let newFile = file.replace("css/", "build/");
+        fs.copyFile(file, newFile, () => {
+            console.log(`Finished ${file}`);
+        });
+    });
+});
+
+// Copy over all image files
+glob("images/**/*", (er, files) => {
+    files.forEach(file => {
+        console.log(`Copying ${file} ...`);
+        let newFile = file.replace("images/", "build/images/");
         fs.copyFile(file, newFile, () => {
             console.log(`Finished ${file}`);
         });
