@@ -1,5 +1,8 @@
 ---
+# Pug options
 pretty: true
+
+# Test stuff
 greeting: why hello there
 nested:
   whyNot: yes!!
@@ -10,3 +13,13 @@ bulletPoints:
   - Software engineer
   - University of Michigan student
   - Video game enthusiast
+
+# Project entries
+projects:
+  - name: Gray Area
+    logline: Really bad video game
+    image: images/gray-area.webp
+
+  - name: A Duel with The Devil
+    logline: Really good video game
+    image: images/dwtd.webp

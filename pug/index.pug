@@ -5,7 +5,9 @@ html(lang="en")
         title hi
     body
         include /site-header.pug
-        p.
-            here we are
-            #{greeting}
-            #{nested.whyNot}
+        
+        .projects
+            each project in projects
+                a.project(href=project.image, style=`background-image: url(${project.image})`)
+                    h2= project.name
+                    p= project.logline

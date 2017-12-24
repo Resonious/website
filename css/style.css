@@ -18,7 +18,7 @@ body {
 }
 
 .site-header > .banner {
-    background-color: #e4e4e4;
+    background-color: #c7c7c7;
 
     border-top: 0.01em solid black;
     border-bottom: 0.01em solid black;
@@ -44,4 +44,45 @@ h1 {
     font-family: 'Varela Round', sans-serif;
     font-size: 5em;
     text-shadow: 0.05em 0.05em #f5f5dc;
+}
+
+h2 {
+    text-shadow: 0.05em 0.05em #f5f5dc;
+    font-family: 'Varela Round', sans-serif;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    background-color: #c7c7c7;
+    margin: 0;
+    background-repeat:no-repeat;
+    background-position: center center;
+
+    color: black;
+    text-decoration: none;
+
+    width: 20em;
+    height: 20em;
+    text-align: center;
+    margin: 1em;
+    font-family: 'Play', sans-serif;
+
+    border: 3px solid black;
+
+    transition-property: font-size, width, height;
+    transition-duration: 0.3s;
+}
+
+.project:hover h2 {
+    font-size: 2em;
+}
+
+.project:hover {
+    font-size: 1.1em;
 }
