@@ -2,14 +2,14 @@
 html(lang="en")
     head
         include /head.pug
-        title hi
+        title Nigel Baillie
     body
         include /site-header.pug
         
         .projects
             each project in projects
                 a.project(
-                    href=project.image,
+                    href=`/projects/${project.path}`,
                     style=`background-image: url(${project.image}); background-position: center ${project.imageAnchor || 'center'}`
                 )
                     h2= project.name

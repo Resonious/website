@@ -13,16 +13,60 @@ bulletPoints:
 # Project entries
 projects:
   - name: Gray Area
+    path: gray-area
     logline: Navigate the world and its inverse.
     image: images/gray-area-preview.webp
     imageAnchor: center
-
-  - name: A Duel with The Devil
-    logline: Side-view grid-based tactical combat.
-    image: images/dwtd-preview.webp
-    imageAnchor: center
+    description:
+      - My entry for Ludum Dare 30. This was my first Ludum Dare entry, and probably
+        my first ever full game. I had done game development before this but never
+        actually finished anything. I suppose the 48 hour time limit pushed me over
+        the edge.
+      - The game is mostly just black and white. There is a black character, and a white character.
+        The black character only collides with black shapes and vice versa. The fun part is that,
+        for instance, a black shape can overlap another black shape, creating a new opening for the
+        white character to jump into.
+    source: https://github.com/Resonious/gray-area
+    link: http://resonious.github.io/gray-area/
 
   - name: Breaker
+    path: breaker
     logline: Punch blocks until you die.
     image: images/breaker-preview.webp
     imageAnchor: bottom
+    description:
+      - My entry for Ludum Dare 31, my second Ludum Dare. I originally described this one as
+        "a mix between Tetris and Minecraft". Blocks fall from the sky, and the goal is just to
+        punch them. If a block lands on you while you're not either dodging or jumping, you are
+        crushed and it's game over. Some blocks shoot projectiles, some explode, and some contain
+        a powerup that can help you clear large stacks of blocks. Eventually, a black hole appears,
+        stirring the madness.
+      - This one turned out rather fun, I think. It got rated \#90 in the "fun" category for LD31.
+    source: https://github.com/Resonious/breaker
+    link: http://resonious.github.io/breaker
+
+  - name: A Duel with The Devil
+    path: a-duel-with-the-devil
+    logline: Side-view grid-based tactical combat.
+    image: images/dwtd-preview.webp
+    imageAnchor: center
+    description:
+      - My entry for Ludum Dare 33. The theme for that LD was "You are the Monster", which I had
+        a hard time working with. I came up with the idea of having an enemy that mimicks the player's
+        behavior somehow, which I thought was a neat, somewhat literal interpretation of
+        "You are the Monster".
+      - I figured if I were going to base the game off of enemy behavior,
+        then I'd need to have a reasonably complex combat system. I came up with something that's vaguely
+        similar to Crypt of The Necro Dancer, except with a sidescroller view (although the camera does
+        not move). Pressing an arrow key moves the character one cell in the specified direction. The "up"
+        direction does somewhat of a jump where the character moves up one cell, and then down one cell after
+        a delay. When the player jumps, and then presses the left or right arrow key while still in the air,
+        they perform a downward slash in that direction. Pressing the down button blocks incoming attacks.
+      - The goal of the game is to move onto your opponent's cell. When each player moves onto each other's
+        cell simultaneously, it's a "clash" and no movement happens. It's a weird system, but surprisingly
+        easy to get the hang of. I did eventually create a boss enemy that behaves differently based on
+        the player's actions during the first several fights, but it was honestly not obvious at all, so
+        nobody really understood the connection between this game and the theme. Nevertheless, the game
+        ranked number 36 in "fun" and 58 in "overall".
+    source: https://github.com/Resonious/dwtd
+    link: https://github.com/Resonious/dwtd/releases/tag/ld33

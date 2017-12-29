@@ -10,27 +10,47 @@ const buildPath = `${__dirname}/build`;
 try { rimraf.sync(buildPath); } catch(_e) {}
 try { fs.mkdirSync(buildPath); } catch(_e) {}
 try { fs.mkdirSync(`${buildPath}/images`); } catch(_e) {}
+try { fs.mkdirSync(`${buildPath}/projects`); } catch(_e) {}
 
 // Grab site data
 let site = yaml.safeLoad(fs.readFileSync(`${__dirname}/site.yml`, 'utf8'));
 site.basedir = `${__dirname}/shared`;
 console.log(__dirname);
 
+console.log(JSON.stringify(site, null, '  '));
+
+// Some helper functions
+let pug2html = (f) => f.replace("pug/", "build/").replace(".pug", ".html");
+let pugCompiled = (newFile) => (err) => {
+    if (err) {
+        console.error(`ERROR: FAILED TO WRITE TO ${newFile} (${err})`);
+    }
+    else {
+        console.log(`Finished ${newFile}`);
+    }
+};
+
 // Go through all the pug files and render them
-glob("pug/**/*.pug", (er, files) => {
+glob("pug/*.pug", (er, files) => {
     files.forEach(file => {
-        let newFile = file.replace("pug/", "build/").replace(".pug", ".html");
+        let newFile = pug2html(file);
         console.log(`Compiling ${file} ...`);
 
-        fs.writeFile(newFile, pug.renderFile(`${__dirname}/${file}`, site), (err) => {
-            if (err) {
-                console.error(`ERROR: FAILED TO WRITE TO ${newFile} (${err})`);
-            }
-            else {
-                console.log(`Finished ${newFile}`);
-            }
-        });
+        fs.writeFile(newFile, pug.renderFile(`${__dirname}/${file}`, site), pugCompiled(newFile));
     });
+});
+
+// Render projects
+site.projects.forEach(project => {
+    if (!project.path) {
+        console.warn(`No path specified for poject: ${project.name} -- not generating a page for it`);
+        return;
+    }
+    let pugFile = `${__dirname}/pug/projects/project.pug`;
+    let newFile = pug2html(pugFile.replace("project.pug", `${project.path}.html`));
+    let context = Object.assign({}, site, { project: project });
+
+    fs.writeFile(newFile, pug.renderFile(pugFile, context), pugCompiled(newFile));
 });
 
 // Copy over all css files
@@ -53,4 +73,9 @@ glob("images/**/*", (er, files) => {
             console.log(`Finished ${file}`);
         });
     });
+});
+
+// Favicon
+fs.copyFile("favicon.ico", "build/favicon.ico", () => {
+    console.log("Copied over favicon.ico");
 });

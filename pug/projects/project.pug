@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        include /head.pug
+        title Nigel Baillie
+    body
+        include /site-header.pug
+
+        .content
+            h2=project.name
+            each paragraph in project.description
+                p=paragraph
+        
+        .content
+            a(href=project.source, target='blank') Source code
+            a(href=project.link, target='blank') Play
