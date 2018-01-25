@@ -30,6 +30,12 @@ let pugCompiled = (newFile) => (err) => {
         console.log(`Finished ${newFile}`);
     }
 };
+let copiedFile = (file) => (err) => {
+    if (err)
+        console.log(`ERROR COPYING ${file}: ${err}`);
+    else
+        console.log(`Finished ${file}`);
+}
 
 // Go through all the pug files and render them
 glob("pug/*.pug", (er, files) => {
@@ -48,8 +54,11 @@ site.projects.forEach(project => {
         return;
     }
     let pugFile = `${__dirname}/pug/projects/project.pug`;
-    let newFile = pug2html(pugFile.replace("project.pug", `${project.path}.html`));
+    let newPath = pug2html(pugFile.replace("project.pug", `${project.path}`));
+    let newFile = `${newPath}/index.html`
     let context = Object.assign({}, site, { project: project });
+
+    try { fs.mkdirSync(newPath); } catch(_e) {}
 
     fs.writeFile(newFile, pug.renderFile(pugFile, context), pugCompiled(newFile));
 });
@@ -59,9 +68,7 @@ glob("css/**/*.css", (er, files) => {
     files.forEach(file => {
         console.log(`Copying ${file} ...`);
         let newFile = file.replace("css/", "build/");
-        fs.copyFile(file, newFile, () => {
-            console.log(`Finished ${file}`);
-        });
+        fs.copyFile(file, newFile, copiedFile(newFile));
     });
 });
 
@@ -70,9 +77,7 @@ glob("images/**/*", (er, files) => {
     files.forEach(file => {
         console.log(`Copying ${file} ...`);
         let newFile = file.replace("images/", "build/images/");
-        fs.copyFile(file, newFile, () => {
-            console.log(`Finished ${file}`);
-        });
+        fs.copyFile(file, newFile, copiedFile(newFile));
     });
 });
 
@@ -81,9 +86,7 @@ glob("videos/**/*", (er, files) => {
     files.forEach(file => {
         console.log(`Copying ${file} ...`);
         let newFile = file.replace("videos/", "build/videos/");
-        fs.copyFile(file, newFile, () => {
-            console.log(`Finished ${file}`);
-        });
+        fs.copyFile(file, newFile, copiedFile(newFile));
     });
 });
 

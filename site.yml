@@ -48,7 +48,7 @@ projects:
         crushed and it's game over. Some blocks shoot projectiles, some explode, and some contain
         a powerup that can help you clear large stacks of blocks. Eventually, a black hole appears,
         stirring the madness.
-      - This one turned out rather fun, I think. It got rated \#90 in the "fun" category for LD31.
+      - 'This one turned out rather fun, I think. It got rated #90 in the "fun" category for LD31.'
     source: https://github.com/Resonious/breaker
     link: http://resonious.github.io/breaker
     entry: http://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=38940
