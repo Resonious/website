@@ -48,6 +48,10 @@ projects:
         crushed and it's game over. Some blocks shoot projectiles, some explode, and some contain
         a powerup that can help you clear large stacks of blocks. Eventually, a black hole appears,
         stirring the madness.
+      - There are several different types of blocks. A red block that does nothing, a blue one that
+        shoots bullets (which do damage other blocks), a metal block that takes a ton of hits to
+        break, a bomb block that explodes 3 seconds after taking damage, and a chest block that
+        reveals a powerup upon breaking.
       - 'This one turned out rather fun, I think. It got rated #90 in the "fun" category for LD31.'
     source: https://github.com/Resonious/breaker
     link: http://resonious.github.io/breaker

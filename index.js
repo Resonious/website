@@ -40,7 +40,14 @@ let copiedFile = (file) => (err) => {
 // Go through all the pug files and render them
 glob("pug/*.pug", (er, files) => {
     files.forEach(file => {
-        let newFile = pug2html(file);
+        if (file.endsWith("index.pug")) {
+            var newFile = pug2html(file);
+        } else {
+            let newPath = pug2html(file.replace(".pug", '/'));
+            var newFile = `${newPath}index.html`
+            try { fs.mkdirSync(newPath); } catch(_e) {}
+        }
+
         console.log(`Compiling ${file} ...`);
 
         fs.writeFile(newFile, pug.renderFile(`${__dirname}/${file}`, site), pugCompiled(newFile));

@@ -22,6 +22,12 @@ body {
     font-family: 'Play', sans-serif;
 }
 
+.info ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 .site-header > .banner {
     background-color: #c7c7c7;
 
@@ -104,4 +110,8 @@ h2 {
     max-width: 45em;
     background-color: #f9f9f9;
     padding: 1em;
+}
+
+.content p {
+  line-height: 160%;
 }
