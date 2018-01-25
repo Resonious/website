@@ -8,9 +8,14 @@ html(lang="en")
 
         .content
             h2=project.name
+
+            video(src=project.video max-width=project.videoWidth, max-height=project.videoHeight, type="video/webm", controls)
+                a(href=project.video) Gameplay footage
+
             each paragraph in project.description
                 p=paragraph
         
         .content
+            a(href=project.entry, target='blank') Ludum Dare entry
             a(href=project.source, target='blank') Source code
             a(href=project.link, target='blank') Play

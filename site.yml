@@ -15,7 +15,10 @@ projects:
   - name: Gray Area
     path: gray-area
     logline: Navigate the world and its inverse.
-    image: images/gray-area-preview.webp
+    image: /images/gray-area-preview.webp
+    video: /videos/gray-area-good-fixed.webm
+    videoWidth: 800
+    videoHeight: 500
     imageAnchor: center
     description:
       - My entry for Ludum Dare 30. This was my first Ludum Dare entry, and probably
@@ -28,11 +31,15 @@ projects:
         white character to jump into.
     source: https://github.com/Resonious/gray-area
     link: http://resonious.github.io/gray-area/
+    entry: http://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=38940
 
   - name: Breaker
     path: breaker
     logline: Punch blocks until you die.
-    image: images/breaker-preview.webp
+    image: /images/breaker-preview.webp
+    video: /videos/breaker-good-fixed.webm
+    videoWidth: 800
+    videoHeight: 600
     imageAnchor: bottom
     description:
       - My entry for Ludum Dare 31, my second Ludum Dare. I originally described this one as
@@ -44,20 +51,24 @@ projects:
       - This one turned out rather fun, I think. It got rated \#90 in the "fun" category for LD31.
     source: https://github.com/Resonious/breaker
     link: http://resonious.github.io/breaker
+    entry: http://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=38940
 
   - name: A Duel with The Devil
     path: a-duel-with-the-devil
     logline: Side-view grid-based tactical combat.
-    image: images/dwtd-preview.webp
+    image: /images/dwtd-preview.webp
+    video: /videos/dwtd-good-fixed.webm
+    videoWidth: 720
+    videoHeight: 512
     imageAnchor: center
     description:
       - My entry for Ludum Dare 33. The theme for that LD was "You are the Monster", which I had
         a hard time working with. I came up with the idea of having an enemy that mimicks the player's
         behavior somehow, which I thought was a neat, somewhat literal interpretation of
         "You are the Monster".
-      - I figured if I were going to base the game off of enemy behavior,
-        then I'd need to have a reasonably complex combat system. I came up with something that's vaguely
-        similar to Crypt of The Necro Dancer, except with a sidescroller view (although the camera does
+      - I figured if I was going to base the game off of enemy behavior,
+        I'd need to have a reasonably complex combat system. I came up with something that's vaguely
+        similar to Crypt of The NecroDancer, except with a sidescroller view (and the camera does
         not move). Pressing an arrow key moves the character one cell in the specified direction. The "up"
         direction does somewhat of a jump where the character moves up one cell, and then down one cell after
         a delay. When the player jumps, and then presses the left or right arrow key while still in the air,
@@ -70,3 +81,4 @@ projects:
         ranked number 36 in "fun" and 58 in "overall".
     source: https://github.com/Resonious/dwtd
     link: https://github.com/Resonious/dwtd/releases/tag/ld33
+    entry: http://ludumdare.com/compo/ludum-dare-33/?action=preview&uid=38940

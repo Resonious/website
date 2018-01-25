@@ -10,6 +10,7 @@ const buildPath = `${__dirname}/build`;
 try { rimraf.sync(buildPath); } catch(_e) {}
 try { fs.mkdirSync(buildPath); } catch(_e) {}
 try { fs.mkdirSync(`${buildPath}/images`); } catch(_e) {}
+try { fs.mkdirSync(`${buildPath}/videos`); } catch(_e) {}
 try { fs.mkdirSync(`${buildPath}/projects`); } catch(_e) {}
 
 // Grab site data
@@ -69,6 +70,17 @@ glob("images/**/*", (er, files) => {
     files.forEach(file => {
         console.log(`Copying ${file} ...`);
         let newFile = file.replace("images/", "build/images/");
+        fs.copyFile(file, newFile, () => {
+            console.log(`Finished ${file}`);
+        });
+    });
+});
+
+// Copy over all video files
+glob("videos/**/*", (er, files) => {
+    files.forEach(file => {
+        console.log(`Copying ${file} ...`);
+        let newFile = file.replace("videos/", "build/videos/");
         fs.copyFile(file, newFile, () => {
             console.log(`Finished ${file}`);
         });
