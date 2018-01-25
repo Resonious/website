@@ -9,8 +9,8 @@ html(lang="en")
         .content
             h2=project.name
 
-            video(src=project.video max-width=project.videoWidth, max-height=project.videoHeight, type="video/webm", controls)
-                a(href=project.video) Gameplay footage
+            video(src=project.video.src max-width=project.video.width, max-height=project.video.height, type="video/webm", controls)
+                a(href=project.video.src) Gameplay footage
 
             each paragraph in project.description
                 p=paragraph

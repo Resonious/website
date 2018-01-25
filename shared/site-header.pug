@@ -6,4 +6,9 @@
         ul
             each point in bulletPoints
                 li= point
+        ul
+            li
+                a(href='mailto:'+email)= email
+            li
+                a(href=github target='blank')= github
 hr

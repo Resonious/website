@@ -10,16 +10,21 @@ bulletPoints:
   - University of Michigan student
   - Video game enthusiast
 
+email: bnigel@umich.edu
+github: https://github.com/Resonious
+
 # Project entries
 projects:
   - name: Gray Area
     path: gray-area
     logline: Navigate the world and its inverse.
-    image: /images/gray-area-preview.webp
-    video: /videos/gray-area-good-fixed.webm
-    videoWidth: 800
-    videoHeight: 500
-    imageAnchor: center
+    image:
+      src: /images/gray-area-preview.webp
+      anchor: center
+    video:
+      src: /videos/gray-area-good-fixed.webm
+      width: 800
+      height: 500
     description:
       - My entry for Ludum Dare 30. This was my first Ludum Dare entry, and probably
         my first ever full game. I had done game development before this but never
@@ -36,11 +41,13 @@ projects:
   - name: Breaker
     path: breaker
     logline: Punch blocks until you die.
-    image: /images/breaker-preview.webp
-    video: /videos/breaker-good-fixed.webm
-    videoWidth: 800
-    videoHeight: 600
-    imageAnchor: bottom
+    image:
+      src: /images/breaker-preview.webp
+      anchor: bottom
+    video:
+      src: /videos/breaker-good-fixed.webm
+      width: 800
+      height: 600
     description:
       - My entry for Ludum Dare 31, my second Ludum Dare. I originally described this one as
         "a mix between Tetris and Minecraft". Blocks fall from the sky, and the goal is just to
@@ -60,11 +67,13 @@ projects:
   - name: A Duel with The Devil
     path: a-duel-with-the-devil
     logline: Side-view grid-based tactical combat.
-    image: /images/dwtd-preview.webp
-    video: /videos/dwtd-good-fixed.webm
-    videoWidth: 720
-    videoHeight: 512
-    imageAnchor: center
+    image:
+      src: /images/dwtd-preview.webp
+      anchor: center
+    video:
+      src: /videos/dwtd-good-fixed.webm
+      width: 720
+      height: 512
     description:
       - My entry for Ludum Dare 33. The theme for that LD was "You are the Monster", which I had
         a hard time working with. I came up with the idea of having an enemy that mimicks the player's

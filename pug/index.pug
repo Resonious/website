@@ -10,7 +10,7 @@ html(lang="en")
             each project in projects
                 a.project(
                     href=`/projects/${project.path}`,
-                    style=`background-image: url(${project.image}); background-position: center ${project.imageAnchor || 'center'}`
+                    style=`background-image: url(${project.image.src}); background-position: center ${project.image.anchor || 'center'}`
                 )
                     h2= project.name
                     p= project.logline

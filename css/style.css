@@ -10,22 +10,27 @@ body {
     text-align: center;
 }
 
-.site-header a {
+.site-header a.banner {
     text-decoration: none;
     color: black;
 }
 
 .site-header > .info {
     display: inline-flex;
-    flex-direction: column;
-    justify-content: left;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
     font-family: 'Play', sans-serif;
 }
 
 .info ul {
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0.1em;
+}
+
+.info ul li {
+    padding: 0.1em;
 }
 
 .site-header > .banner {
