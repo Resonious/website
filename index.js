@@ -1,5 +1,5 @@
 const glob = require("glob");
-const fs = require("fs");
+const fs = require("file-system");
 const rimraf = require("rimraf");
 const yaml = require('js-yaml');
 const pug = require('pug');
@@ -68,7 +68,7 @@ glob("css/**/*.css", (er, files) => {
     files.forEach(file => {
         console.log(`Copying ${file} ...`);
         let newFile = file.replace("css/", "build/");
-        fs.copyFile(file, newFile, copiedFile(newFile));
+        fs.copyFile(file, newFile, { done: copiedFile(newFile) });
     });
 });
 
@@ -77,7 +77,7 @@ glob("images/**/*", (er, files) => {
     files.forEach(file => {
         console.log(`Copying ${file} ...`);
         let newFile = file.replace("images/", "build/images/");
-        fs.copyFile(file, newFile, copiedFile(newFile));
+        fs.copyFile(file, newFile, { done: copiedFile(newFile) });
     });
 });
 
@@ -86,7 +86,7 @@ glob("videos/**/*", (er, files) => {
     files.forEach(file => {
         console.log(`Copying ${file} ...`);
         let newFile = file.replace("videos/", "build/videos/");
-        fs.copyFile(file, newFile, copiedFile(newFile));
+        fs.copyFile(file, newFile, { done: copiedFile(newFile) });
     });
 });
 
