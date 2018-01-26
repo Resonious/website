@@ -8,9 +8,15 @@
                 li= point
         ul
             li
-                a(href='mailto:'+email)= email
+                a(href='mailto:'+email)
+                    img(src='/images/Mail.png', alt="Email:", width="16", height="16")
+                    span=email
             li
-                a(href=github target='blank')= github
+                a(href=github target='blank')
+                    img(src='/images/GitHub-Mark-32px.png', alt="Github:", width="16", height="16")
+                    span=github
             li
-                a(href=resume target='blank') Resume
+                a(href=resume target='blank')
+                    img(src='/images/document-outline.png', alt="Resume:", width="16", height="16")
+                    span Resume
 hr
