@@ -121,6 +121,10 @@ h2 {
     padding: 1em;
 }
 
+.content video {
+    max-width: 45em;
+}
+
 .content p {
   line-height: 160%;
 }

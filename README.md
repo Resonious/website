@@ -1,16 +1,28 @@
-My portfolio site
+My portfolio site. Very simple static website using pug.
 
-# Here's how I convert stuff to webp:
+https://nigelbaillie.me
+
+Build it by running `node index.js`. That'll generate a `build` directory which contains the whole website.
+
+# NOTES TO MYSELF:
+
+## Here's how I convert stuff to webp:
 
 ``` bash
-ffmpeg -i "Gray area preview.mp4" -vcodec libwebp -lossless 1 -q 60 -preset default -loop 0 -an -vsync 0 -threads 3 $WINHOME/Documents/Website/images/gray-area-preview.webp
+ffmpeg -i wrecked-preview.mp4 -vcodec libwebp -lossless 1 -q 60 -preset default -loop 0 -an -vsync 0 -threads 3 $WINHOME/Documents/Website/images/wrecked-preview.webp
 ```
 
-# Video export options
+## And to webm:
+
+``` bash
+ffmpeg -i dwtd-good-fixed.mp4 -c:v libvpx -crf 10 -b:v 1M -c:a libvorbis dwtd-good-fixed.webm
+```
+
+## Video export options
 
 Because OpenShot is a pain and doesn't let me save a custom profile (as far as I can tell), here are some settings I've used (for in case I need to re-export).
 
-## DWTD
+### DWTD
 
 ```
 Factor: 0.85
@@ -21,7 +33,7 @@ Original Width: 720
 Original Height: 512
 ```
 
-## Gray Area
+### Gray Area
 
 ```
 Factor: 0.8
@@ -32,7 +44,7 @@ Original Width: 800
 Original Height: 500
 ```
 
-## Breaker
+### Breaker
 
 ```
 Factor: ???

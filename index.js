@@ -70,8 +70,7 @@ let generateProject = project => {
     fs.writeFile(newFile, pug.renderFile(pugFile, context), pugCompiled(newFile));
 }
 site.ldProjects.forEach(generateProject);
-// TODO
-//site.schoolProjects.forEach(generateProject);
+site.schoolProjects.forEach(generateProject);
 
 // Copy over all css files
 glob("css/**/*.css", (er, files) => {

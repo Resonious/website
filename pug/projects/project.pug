@@ -9,7 +9,7 @@ html(lang="en")
         .content
             h2=project.name
 
-            video(src=project.video.src max-width=project.video.width, max-height=project.video.height, type="video/webm", controls)
+            video(src=project.video.src, type="video/webm", controls)
                 a(href=project.video.src) Gameplay footage
 
             each paragraph in project.description
@@ -17,9 +17,14 @@ html(lang="en")
         
         .content.info
             ul
-                li
-                    a(href=project.entry, target='blank') Ludum Dare entry
-                li
-                    a(href=project.source, target='blank') Source code
+                if project.entry
+                    li
+                        a(href=project.entry, target='blank') Ludum Dare entry
+                if project.source
+                    li
+                        a(href=project.source, target='blank') Source code
                 li
                     a(href=project.link, target='blank') Play
+                
+                li
+                    a(href="/") Return to projects list

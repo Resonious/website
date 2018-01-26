@@ -20,11 +20,21 @@ schoolProjects:
     path: wrecked
     logline: Demolish your friends with jet-powered construction vehicles.
     image:
-      src: /images/gray-area-preview.webp
+      src: /images/wrecked-preview.webp
       anchor: bottom
+    video:
+      src: /videos/wrecked-trailer.webm
     description:
-      - This was built in a team of four for the final project of U-M's EECS 494.
-      - whoa
+      - This was built in a team of four for the final project of U-M's EECS 494 over the course
+        of about two months. This particular team of four consisted of me, Jennifer Dailey,
+        Joseph Pohlman, and Adilah Ku.
+      - The assignment was to make a game to be played during the EECS 494 showcasee
+        at the end of the semester. The showcase is a big event where everyone invites
+        their friends and family, so the final project games ought to be easy to pick up
+        and quickly engaging, similar to old arcade games. We figured a four player competitive
+        game was a good fit, and decided to go with an over-the-top insane type of theme.
+        So, flying construction vehicles with wrecking balls it was.
+    link: https://drive.google.com/file/d/1YEMy9K25qMliJfmSa2uLyH7G1Z-rnMuD/view?usp=sharing
 
 ldProjects:
   - name: Gray Area
@@ -35,8 +45,6 @@ ldProjects:
       anchor: center
     video:
       src: /videos/gray-area-good-fixed.webm
-      width: 800
-      height: 500
     description:
       - My entry for Ludum Dare 30. This was my first Ludum Dare entry, and probably
         my first ever full game. I had done game development before this but never
@@ -58,8 +66,6 @@ ldProjects:
       anchor: bottom
     video:
       src: /videos/breaker-good-fixed.webm
-      width: 800
-      height: 600
     description:
       - My entry for Ludum Dare 31, my second Ludum Dare. I originally described this one as
         "a mix between Tetris and Minecraft". Blocks fall from the sky, and the goal is just to
@@ -84,8 +90,6 @@ ldProjects:
       anchor: center
     video:
       src: /videos/dwtd-good-fixed.webm
-      width: 720
-      height: 512
     description:
       - My entry for Ludum Dare 33. The theme for that LD was "You are the Monster", which I had
         a hard time working with. I came up with the idea of having an enemy that mimicks the player's
