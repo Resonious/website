@@ -12,9 +12,21 @@ bulletPoints:
 
 email: bnigel@umich.edu
 github: https://github.com/Resonious
+resume: https://github.com/Resonious/Resume/raw/master/nigel-baillie-resume.pdf
 
 # Project entries
-projects:
+schoolProjects:
+  - name: Wrecked
+    path: wrecked
+    logline: Demolish your friends with jet-powered construction vehicles.
+    image:
+      src: /images/gray-area-preview.webp
+      anchor: bottom
+    description:
+      - This was built in a team of four for the final project of U-M's EECS 494.
+      - whoa
+
+ldProjects:
   - name: Gray Area
     path: gray-area
     logline: Navigate the world and its inverse.

@@ -3,3 +3,4 @@ build/
 build.tar.*
 build.zip
 build.7z
+*.swp

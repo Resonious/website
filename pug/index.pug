@@ -5,12 +5,27 @@ html(lang="en")
         title Nigel Baillie
     body
         include /site-header.pug
-        
-        .projects
-            each project in projects
-                a.project(
-                    href=`/projects/${project.path}`,
-                    style=`background-image: url(${project.image.src}); background-position: center ${project.image.anchor || 'center'}`
-                )
-                    h2= project.name
-                    p= project.logline
+
+        .project-group
+            h1 Ludum Dare projects
+
+            .projects
+                each project in ldProjects
+                    a.project(
+                        href=`/projects/${project.path}`,
+                        style=`background-image: url(${project.image.src}); background-position: center ${project.image.anchor || 'center'}`
+                    )
+                        h2= project.name
+                        p= project.logline
+
+        .project-group
+            h1 School projects
+
+            .projects
+                each project in schoolProjects
+                    a.project(
+                        href=`/projects/${project.path}`,
+                        style=`background-image: url(${project.image.src}); background-position: center ${project.image.anchor || 'center'}`
+                    )
+                        h2= project.name
+                        p= project.logline

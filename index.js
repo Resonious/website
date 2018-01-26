@@ -55,7 +55,7 @@ glob("pug/*.pug", (er, files) => {
 });
 
 // Render projects
-site.projects.forEach(project => {
+let generateProject = project => {
     if (!project.path) {
         console.warn(`No path specified for poject: ${project.name} -- not generating a page for it`);
         return;
@@ -68,7 +68,10 @@ site.projects.forEach(project => {
     try { fs.mkdirSync(newPath); } catch(_e) {}
 
     fs.writeFile(newFile, pug.renderFile(pugFile, context), pugCompiled(newFile));
-});
+}
+site.ldProjects.forEach(generateProject);
+// TODO
+//site.schoolProjects.forEach(generateProject);
 
 // Copy over all css files
 glob("css/**/*.css", (er, files) => {
