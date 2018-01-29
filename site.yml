@@ -28,6 +28,32 @@ sideProjects:
     source: https://github.com/Resonious/crattlecrute
 
 schoolProjects:
+  - name: One After Another
+    path: one-after-another
+    logline: Cooperate with your past self.
+    image:
+      src: /images/oato-preview.webp
+      anchor: center
+    video:
+      src: /videos/oato-gameplay.webm
+    description:
+      - This was a solo project for U-M's EECS 494. The goal of the project was to come up
+        with a novel idea, and thoroughly explore it in a playable prototype.
+      - My original idea was something along the lines of having real time combat where players
+        controlled multiple characters. I was thinking along the lines of recording a routine
+        for one character, and then switching over to another character to record their routine.
+      - I cooked up an input recording/playback system and as I was messing around with it, I
+        found that often what I wanted to do as one character was walk to a new location. The
+        problem with that was that I would then switch back to the other character, and the
+        character I just moved would proceed to walk itself into walls or jump off cliffs.
+        I could have explored some way to manually specify when you're recording, but that
+        struck me as too confusing.
+      - In the end, I ended up scrapping the whole combat idea, and went with a simple platformer.
+        Instead of recording controls and switching between characters, however, I made it so
+        that once you reach the end of a level, you respawn at the beginning alongside a ghost
+        of your previous run.
+    link: https://drive.google.com/file/d/1phdvL61pEeFksbCAzC4vA7MpSdcvbsqG/view?usp=sharing
+
   - name: Wrecked
     path: wrecked
     logline: Demolish your friends with jet-powered construction vehicles.
@@ -47,7 +73,6 @@ schoolProjects:
         game was a good fit, and decided to go with an over-the-top insane type of theme.
         So, flying construction vehicles with wrecking balls it was.
       - Also, yes, I did the voiceover for that trailer.
-
     link: https://drive.google.com/file/d/1YEMy9K25qMliJfmSa2uLyH7G1Z-rnMuD/view?usp=sharing
 
 ldProjects:
