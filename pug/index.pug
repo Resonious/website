@@ -29,3 +29,15 @@ html(lang="en")
                     )
                         h2= project.name
                         p= project.logline
+
+        .project-group
+            h1 Side projects
+
+            .projects
+                each project in sideProjects
+                    a.project(
+                        href=`/projects/${project.path}`,
+                        style=`background-image: url(${project.image.src}); background-position: center ${project.image.anchor || 'center'}`
+                    )
+                        h2= project.name
+                        p= project.logline

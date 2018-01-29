@@ -3,6 +3,7 @@ const fs = require("file-system");
 const rimraf = require("rimraf");
 const yaml = require('js-yaml');
 const pug = require('pug');
+const markdown = require('markdown').markdown;
 
 const buildPath = `${__dirname}/build`;
 
@@ -65,12 +66,17 @@ let generateProject = project => {
     let newFile = `${newPath}/index.html`
     let context = Object.assign({}, site, { project: project });
 
+    if (project.descriptionDoc) {
+        context.renderedDescription = markdown.toHTML(fs.readFileSync(`documents/${project.descriptionDoc}`, "utf8"));
+    }
+
     try { fs.mkdirSync(newPath); } catch(_e) {}
 
     fs.writeFile(newFile, pug.renderFile(pugFile, context), pugCompiled(newFile));
 }
 site.ldProjects.forEach(generateProject);
 site.schoolProjects.forEach(generateProject);
+site.sideProjects.forEach(generateProject);
 
 // Copy over all css files
 glob("css/**/*.css", (er, files) => {

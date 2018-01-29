@@ -15,6 +15,18 @@ github: https://github.com/Resonious
 resume: https://github.com/Resonious/Resume/raw/master/nigel-baillie-resume.pdf
 
 # Project entries
+sideProjects:
+  - name: Crattlecrute
+    path: crattlecrute
+    logline: An unfinished attempt to create a game "from scratch"
+    image:
+      src: /images/crattlecrute-preview.webp
+      anchor: center
+    video:
+      src: /videos/crattlecrute-gameplay.webm
+    descriptionDoc: crattlecrute-description.md
+    source: https://github.com/Resonious/crattlecrute
+
 schoolProjects:
   - name: Wrecked
     path: wrecked
@@ -34,6 +46,8 @@ schoolProjects:
         and quickly engaging, similar to old arcade games. We figured a four player competitive
         game was a good fit, and decided to go with an over-the-top insane type of theme.
         So, flying construction vehicles with wrecking balls it was.
+      - Also, yes, I did the voiceover for that trailer.
+
     link: https://drive.google.com/file/d/1YEMy9K25qMliJfmSa2uLyH7G1Z-rnMuD/view?usp=sharing
 
 ldProjects:

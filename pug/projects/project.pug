@@ -12,8 +12,11 @@ html(lang="en")
             video(src=project.video.src, type="video/webm", controls)
                 a(href=project.video.src) Gameplay footage
 
-            each paragraph in project.description
-                p=paragraph
+            if project.description
+                each paragraph in project.description
+                    p=paragraph
+            if renderedDescription
+                != renderedDescription
         
         .content.info
             ul
@@ -23,8 +26,9 @@ html(lang="en")
                 if project.source
                     li
                         a(href=project.source, target='blank') Source code
-                li
-                    a(href=project.link, target='blank') Play
+                if project.link
+                    li
+                        a(href=project.link, target='blank') Play
                 
                 li
                     a(href="/") Return to projects list
