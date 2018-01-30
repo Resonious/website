@@ -23,11 +23,12 @@ this gets a tad crazy, as the server keeps track of every client's position in e
 client's input buffer, and if a client is too far behind in running through a remote client's
 buffer, it will actually play back at twice the speed until sufficiently caught up.
 
-One significant thing I got out of this project is a thorough appreciation of the asset pipelines in big game engines.
 One of the goals with this project was to try and make the compiled result a single dependenciless
 executable. To achieve that, there's a fairly complicated pre-build script in which tilemaps
-and collision height maps get compressed and turned into C arrays, and binary assets get clumped into a
-one big file. Then, that binary clump of assets gets shoved into the final executable using
-platform-specific embedding features, namely `createsect` for macOS, LD for Linux, and Resources
-for Windows. An `assets.h` file is generated, containing the various C arrays as well as
-constants that index into the assets blob.
+and collision height maps get turned into C arrays and tossed into a generated `assets.h` file.
+All other assets get crammed into a single binary blob, and a bunch of constants with sizes and offsets
+get added to `assets.h`. Then on build it uses platform specific features
+("resources" for Windows, `ld -r -b binary` for Linux, and `sectcreate` for macOS)
+to embed the binary asset blob into the executable on compilation. Unfortunately I was never able to
+make the Windows build run without installing the Visual C++ redistributable, but other than
+that, it was dependenciless!
