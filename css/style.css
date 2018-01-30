@@ -64,7 +64,11 @@ h1 {
 }
 
 h2 {
-    text-shadow: 0.05em 0.05em #f5f5dc;
+    text-shadow:
+		-1px -1px 0 #f5f5dc,
+		1px -1px 0 #f5f5dc,
+		-1px 1px 0 #f5f5dc,
+		1px 1px 0 #f5f5dc;
     font-family: 'Varela Round', sans-serif;
 }
 
