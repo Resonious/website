@@ -18,6 +18,14 @@ ffmpeg -i wrecked-preview.mp4 -vcodec libwebp -lossless 1 -q 60 -preset default 
 ffmpeg -i dwtd-good-fixed.mp4 -c:v libvpx -crf 10 -b:v 1M -c:a libvorbis dwtd-good-fixed.webm
 ```
 
+## And to apng:
+
+(Use FFMPEG 3.4+ for this)
+
+``` bash
+ffmpeg -i breaker-preview.mp4 -plays 0 -threads 3 $WINHOME/Documents/Website/images/breaker-preview.apng
+```
+
 ## Video export options
 
 Because OpenShot is a pain and doesn't let me save a custom profile (as far as I can tell), here are some settings I've used (for in case I need to re-export).
