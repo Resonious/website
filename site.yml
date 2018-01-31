@@ -20,7 +20,7 @@ sideProjects:
     path: crattlecrute
     logline: An unfinished attempt to create a game "from scratch"
     image:
-      src: /images/crattlecrute-preview.webp
+      src: /images/crattlecrute-preview.apng
       anchor: center
     video:
       src: /videos/crattlecrute-gameplay.webm
@@ -32,7 +32,7 @@ schoolProjects:
     path: one-after-another
     logline: Cooperate with your past self.
     image:
-      src: /images/oato-preview.webp
+      src: /images/oato-preview.apng
       anchor: center
     video:
       src: /videos/oato-gameplay.webm
@@ -58,7 +58,7 @@ schoolProjects:
     path: wrecked
     logline: Demolish your friends with jet-powered construction vehicles.
     image:
-      src: /images/wrecked-preview.webp
+      src: /images/wrecked-preview.apng
       anchor: bottom
     video:
       src: /videos/wrecked-trailer.webm
@@ -80,7 +80,7 @@ ldProjects:
     path: gray-area
     logline: Navigate the world and its inverse.
     image:
-      src: /images/gray-area-preview.webp
+      src: /images/gray-area-preview.apng
       anchor: center
     video:
       src: /videos/gray-area-good-fixed.webm
@@ -101,7 +101,7 @@ ldProjects:
     path: breaker
     logline: Punch blocks until you die.
     image:
-      src: /images/breaker-preview.webp
+      src: /images/breaker-preview.apng
       anchor: bottom
     video:
       src: /videos/breaker-good-fixed.webm
@@ -125,7 +125,7 @@ ldProjects:
     path: a-duel-with-the-devil
     logline: Side-view grid-based tactical combat.
     image:
-      src: /images/dwtd-preview.webp
+      src: /images/dwtd-preview.apng
       anchor: center
     video:
       src: /videos/dwtd-good-fixed.webm
