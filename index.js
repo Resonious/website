@@ -87,6 +87,15 @@ glob("css/**/*.css", (er, files) => {
     });
 });
 
+// Copy over all js files
+glob("js/**/*.js", (er, files) => {
+    files.forEach(file => {
+        console.log(`Copying ${file} ...`);
+        let newFile = file.replace("js/", "build/");
+        fs.copyFile(file, newFile, { done: copiedFile(newFile) });
+    });
+});
+
 // Copy over all image files
 glob("images/**/*", (er, files) => {
     files.forEach(file => {
