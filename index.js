@@ -114,6 +114,15 @@ glob("videos/**/*", (er, files) => {
     });
 });
 
+// Copy over all static files
+glob("static/**/*", (er, files) => {
+    files.forEach(file => {
+        console.log(`Copying ${file} ...`);
+        let newFile = file.replace("static/", "build/");
+        fs.copyFile(file, newFile, { done: copiedFile(newFile) });
+    });
+});
+
 // Favicon
 fs.copyFile("favicon.ico", "build/favicon.ico", () => {
     console.log("Copied over favicon.ico");
