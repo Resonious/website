@@ -1,0 +1,55 @@
+==================================================================
+https://keybase.io/resonious
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://nigelbaillie.me
+  * I am resonious (https://keybase.io/resonious) on keybase.
+  * I have a public key ASDSjFzqNbO_JlieMX706Ahfo70lvmivZkVaeH2y0SKugwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120d28c5cea35b3bf26589e317ef4e8085fa3bd25be68af66455a787db2d122ae830a",
+      "host": "keybase.io",
+      "kid": "0120d28c5cea35b3bf26589e317ef4e8085fa3bd25be68af66455a787db2d122ae830a",
+      "uid": "ebc44eb6cb881aeadb5a8bb33bb2c919",
+      "username": "resonious"
+    },
+    "merkle_root": {
+      "ctime": 1517858832,
+      "hash": "5640d4f705520a6411c6673c7c77b6e6430caaf83e16708464275a1bcac7f5fd97ecb776f325b222eecbfc4bb1f87b1a07a1695a659f6aeb9e23fe31b8e45be1",
+      "hash_meta": "fa626fc1569fb94d033824d3635b464cf19ed1c938f0423d6857631213f9048f",
+      "seqno": 2036904
+    },
+    "service": {
+      "hostname": "nigelbaillie.me",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "1.0.40"
+  },
+  "ctime": 1517858844,
+  "expire_in": 504576000,
+  "prev": "b1ae3eb5e0fc7bc23c9f98d340f6ef7e0d2e5282c90aa53bcede984d586d76ff",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg0oxc6jWzvyZYnjF+9OgIX6O9Jb5or2ZFWnh9stEiroMKp3BheWxvYWTFA0h7ImJvZHkiOnsia2V5Ijp7ImVsZGVzdF9raWQiOiIwMTIwZDI4YzVjZWEzNWIzYmYyNjU4OWUzMTdlZjRlODA4NWZhM2JkMjViZTY4YWY2NjQ1NWE3ODdkYjJkMTIyYWU4MzBhIiwiaG9zdCI6ImtleWJhc2UuaW8iLCJraWQiOiIwMTIwZDI4YzVjZWEzNWIzYmYyNjU4OWUzMTdlZjRlODA4NWZhM2JkMjViZTY4YWY2NjQ1NWE3ODdkYjJkMTIyYWU4MzBhIiwidWlkIjoiZWJjNDRlYjZjYjg4MWFlYWRiNWE4YmIzM2JiMmM5MTkiLCJ1c2VybmFtZSI6InJlc29uaW91cyJ9LCJtZXJrbGVfcm9vdCI6eyJjdGltZSI6MTUxNzg1ODgzMiwiaGFzaCI6IjU2NDBkNGY3MDU1MjBhNjQxMWM2NjczYzdjNzdiNmU2NDMwY2FhZjgzZTE2NzA4NDY0Mjc1YTFiY2FjN2Y1ZmQ5N2VjYjc3NmYzMjViMjIyZWVjYmZjNGJiMWY4N2IxYTA3YTE2OTVhNjU5ZjZhZWI5ZTIzZmUzMWI4ZTQ1YmUxIiwiaGFzaF9tZXRhIjoiZmE2MjZmYzE1NjlmYjk0ZDAzMzgyNGQzNjM1YjQ2NGNmMTllZDFjOTM4ZjA0MjNkNjg1NzYzMTIxM2Y5MDQ4ZiIsInNlcW5vIjoyMDM2OTA0fSwic2VydmljZSI6eyJob3N0bmFtZSI6Im5pZ2VsYmFpbGxpZS5tZSIsInByb3RvY29sIjoiaHR0cHM6In0sInR5cGUiOiJ3ZWJfc2VydmljZV9iaW5kaW5nIiwidmVyc2lvbiI6MX0sImNsaWVudCI6eyJuYW1lIjoia2V5YmFzZS5pbyBnbyBjbGllbnQiLCJ2ZXJzaW9uIjoiMS4wLjQwIn0sImN0aW1lIjoxNTE3ODU4ODQ0LCJleHBpcmVfaW4iOjUwNDU3NjAwMCwicHJldiI6ImIxYWUzZWI1ZTBmYzdiYzIzYzlmOThkMzQwZjZlZjdlMGQyZTUyODJjOTBhYTUzYmNlZGU5ODRkNTg2ZDc2ZmYiLCJzZXFubyI6NywidGFnIjoic2lnbmF0dXJlIn2jc2lnxEDb4zHZd4FtL/eprdoZaBZOpbKnScLdHmgBqSVtE5n9osY91oYZ4KXf5yWevDA4+ocdbDbw97OjCJCXLfydiT8NqHNpZ190eXBlIKRoYXNogqR0eXBlCKV2YWx1ZcQgU5inYvuuiMSjJ2ksD2H9i8KclEVAgdyp40pFj3XVPHqjdGFnzQICp3ZlcnNpb24B
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/resonious
+
+==================================================================
