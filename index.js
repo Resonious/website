@@ -4,6 +4,7 @@ const rimraf = require("rimraf");
 const yaml = require('js-yaml');
 const pug = require('pug');
 const markdown = require('markdown').markdown;
+const path = require('path')
 
 const buildPath = `${__dirname}/build`;
 
@@ -101,6 +102,8 @@ glob("images/**/*", (er, files) => {
     files.forEach(file => {
         console.log(`Copying ${file} ...`);
         let newFile = file.replace("images/", "build/images/");
+
+        try { fs.mkdirSync(path.dirname(dirname)); } catch(_e) {}
         fs.copyFile(file, newFile, { done: copiedFile(newFile) });
     });
 });
