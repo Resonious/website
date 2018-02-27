@@ -6,6 +6,17 @@ Build it by running `node index.js`. That'll generate a `build` directory which 
 
 # NOTES TO MYSELF:
 
+## Slicing and gray overlay all with ffmpeg!
+
+``` bash
+# -ss = start time
+# -t  = duration
+# -an = no audio
+ffmpeg -i corgi-fishing-demo-1.mov -ss 00:05 -t 4 -threads 3 -an \
+  -filter_complex 'color=color=gray@.4:size=990x800 [over]; [0:v][over] overlay' \
+  $WINHOME/Documents/Website/images/corgi-preview.webm
+```
+
 ## Here's how I convert stuff to webp:
 
 ``` bash

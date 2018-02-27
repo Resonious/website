@@ -150,3 +150,31 @@ ldProjects:
     source: https://github.com/Resonious/dwtd
     link: https://github.com/Resonious/dwtd/releases/tag/ld33
     entry: http://ludumdare.com/compo/ludum-dare-33/?action=preview&uid=38940
+
+  - name: Interdimensional Corgi Fishing
+    path: corgi-fishing
+    logline: Utilize a magic headlamp to see into the fish dimension.
+    image:
+      src: /videos/corgi-preview.webm
+      anchor: center
+      height: '464px'
+    video:
+      src: /videos/corgi-gameplay.webm
+    description:
+      - My (and team's) entry for the 2nd Alakajam! The theme was "You can't see everything".
+        I ended up with a team much larger than originally anticipated for this one (5 people!),
+        which worried me as I suspected communicating with people would use up a lot of time.
+        Surely enough, communicating with people did take up a fair amount of time, but the
+        productivity boost of the large team proved to make up the difference! Plus it was a
+        lot of fun.
+      - Admittedly this game's concept is quite bizarre. Our original idea included being
+        able to collect magic glasses that change the world when worn, and as a result of
+        narrowing things down, it became using a headlamp to view a small portion of another
+        world and swap things to and from that world. Because it took us so long to come up
+        with enough of a concept to get started, we delayed coming up with any actual gameplay
+        until rather late in the jam (and night). It occurred to us after the matter that
+        it's maybe strange to collect a bunch of fish in buckets, and then leave the fish
+        behind and eat regular dog food.
+      - "Team: Nigel Baillie, Jennifer Dailey, Nathan Korth, Daniel Korp, Joe Ambrose, and Sundari Butkiewicz."
+    link: https://drive.google.com/file/d/1X0A7wivRNggnGpp7IWO0U2bauzYuEIgQ/view?usp=sharing
+    entry: https://alakajam.com/2nd-alakajam/172/interdimensional-corgi-fishing/

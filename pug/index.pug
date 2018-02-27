@@ -9,16 +9,26 @@ html(lang="en")
             include /serve_webps_on_chrome.js
 
         .project-group
-            h1 Ludum Dare projects
+            h1 Game jam projects
 
             .projects
                 each project in ldProjects
-                    a.project(
-                        href=`/projects/${project.path}`,
-                        style=`background-image: url(${project.image.src}); background-position: center ${project.image.anchor || 'center'}`
-                    )
-                        h2= project.name
-                        p= project.logline
+                    if project.image.src.includes("/videos/")
+                        div.project.video-div
+                            div.video-block(style=`align-items: ${project.image.anchor == 'center' ? 'flex-end' : 'center'};`)
+                                video.bgvid(autoplay="autoplay" loop="loop" height=project.image.height)
+                                    source(src=project.image.src)
+                                div.video-message
+                                    a(href=`/projects/${project.path}`)
+                                        h2= project.name
+                                        p= project.logline
+                    else
+                        a.project(
+                            href=`/projects/${project.path}`,
+                            style=`background-image: url(${project.image.src}); background-position: center ${project.image.anchor || 'center'}`
+                        )
+                            h2= project.name
+                            p= project.logline
 
         .project-group
             h1 School projects
@@ -33,7 +43,7 @@ html(lang="en")
                         p= project.logline
 
         .project-group
-            h1 Side projects
+            h1 Noteworthy side projects
 
             .projects
                 each project in sideProjects
