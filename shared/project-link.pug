@@ -1,12 +1,11 @@
 if project.image.src.includes("/videos/")
-    div.project.video-div
+    a.project.video-div(href=`/projects/${project.path}`)
         div.video-block(style=`align-items: ${project.image.anchor == 'bottom' ? 'flex-end' : 'center'};`)
             video.bgvid(autoplay="autoplay" loop="loop" height=project.image.height)
                 source(src=project.image.src)
             div.video-message
-                a(href=`/projects/${project.path}`)
-                    h2= project.name
-                    p= project.logline
+                h2= project.name
+                p= project.logline
 else
     a.project(
         href=`/projects/${project.path}`,

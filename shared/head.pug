@@ -1,6 +1,8 @@
 meta(charset="UTF-8")
 meta(name="viewport", content="width=device-width, initial-scale=1.0")
 meta(http-equiv="X-UA-Compatible", content="ie=edge")
+meta(http-equiv="Content-Security-Policy", content="default-src 'self' https://nigelbaillie.me/ filesystem; style-src https://fonts.googleapis.com/css 'unsafe-inline'; font-src https://fonts.gstatic.com")
+// TODO get a hash of style.css for style-src
 link(href="https://fonts.googleapis.com/css?family=Play|Varela+Round" rel="stylesheet")
 style
     include /style.css
