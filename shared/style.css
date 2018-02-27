@@ -86,6 +86,7 @@ h2 {
 }
 
 .video-div{
+    background-color: #c7c7c7;
     width: 20em;
     height: 20em;
     position: relative;
@@ -105,7 +106,7 @@ h2 {
 .video-message {
     position: absolute;
     top: 0;
-    left: 0;
+    width: 100%;
 }
 
 .video-message a {
@@ -114,7 +115,6 @@ h2 {
 }
 
 .project {
-    /* background-color: #c7c7c7; */
     margin: 0;
     background-repeat:no-repeat;
 

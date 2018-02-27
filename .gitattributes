@@ -1,0 +1,5 @@
+*.webm filter=lfs diff=lfs merge=lfs -text
+*.apng filter=lfs diff=lfs merge=lfs -text
+*.webp filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+*.gif filter=lfs diff=lfs merge=lfs -text

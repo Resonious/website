@@ -13,43 +13,18 @@ html(lang="en")
 
             .projects
                 each project in ldProjects
-                    if project.image.src.includes("/videos/")
-                        div.project.video-div
-                            div.video-block(style=`align-items: ${project.image.anchor == 'center' ? 'flex-end' : 'center'};`)
-                                video.bgvid(autoplay="autoplay" loop="loop" height=project.image.height)
-                                    source(src=project.image.src)
-                                div.video-message
-                                    a(href=`/projects/${project.path}`)
-                                        h2= project.name
-                                        p= project.logline
-                    else
-                        a.project(
-                            href=`/projects/${project.path}`,
-                            style=`background-image: url(${project.image.src}); background-position: center ${project.image.anchor || 'center'}`
-                        )
-                            h2= project.name
-                            p= project.logline
+                    include /project-link.pug
 
         .project-group
             h1 School projects
 
             .projects
                 each project in schoolProjects
-                    a.project(
-                        href=`/projects/${project.path}`,
-                        style=`background-image: url(${project.image.src}); background-position: center ${project.image.anchor || 'center'}`
-                    )
-                        h2= project.name
-                        p= project.logline
+                    include /project-link.pug
 
         .project-group
             h1 Noteworthy side projects
 
             .projects
                 each project in sideProjects
-                    a.project(
-                        href=`/projects/${project.path}`,
-                        style=`background-image: url(${project.image.src}); background-position: center ${project.image.anchor || 'center'}`
-                    )
-                        h2= project.name
-                        p= project.logline
+                    include /project-link.pug
