@@ -109,9 +109,13 @@ h2 {
     width: 100%;
 }
 
-.video-message a {
+a.video-message {
     color: black;
     text-decoration: none;
+}
+
+a.video-message:hover {
+    background-color: #b7f4ff70;
 }
 
 .project {
