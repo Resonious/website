@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9851dca3-1042-4553-8a88-bfcc7731df17/deploy-status)](https://app.netlify.com/sites/nigelbaillie/deploys)
+
 My portfolio site. Very simple static website using pug.
 
 https://nigelbaillie.me
