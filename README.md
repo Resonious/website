@@ -6,6 +6,10 @@ https://nigelbaillie.me
 
 Build it by running `node index.js`. That'll generate a `build` directory which contains the whole website.
 
+# TODO
+
+(shared/head.pug) get a hash of style.css for style-src
+
 # NOTES TO MYSELF:
 
 ## Slicing and gray overlay all with ffmpeg!
