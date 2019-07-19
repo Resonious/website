@@ -24,6 +24,10 @@ body {
     text-align: left;
 }
 
+.site-header > h1.smallhead {
+    font-size: 2em;
+}
+
 .info ul {
     list-style-type: none;
     margin: 0;
@@ -36,7 +40,7 @@ body {
     padding: 0.1em;
 }
 
-.site-header > .banner {
+.banner {
     background-color: #c7c7c7;
 
     border-top: 0.01em solid black;
@@ -150,6 +154,73 @@ a.video-message:hover {
     margin: 0em;
 }
 
+.gallery {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 1em;
+}
+
+.gallerypic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    height: 40em;
+    width: 30em;
+
+    margin: 0em;
+
+    transition-property: font-size, margin, width, height;
+    transition-duration: 0.3s;
+}
+
+.imglink {
+    height: 34em;
+
+    transition-property: font-size, margin, width, height;
+    transition-duration: 0.3s;
+}
+
+.gallerypic img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: bottom;
+
+    transition-property: margin, width, height;
+    transition-duration: 0.3s;
+}
+
+.gallerypic p {
+    font-size: 1em;
+    text-align: center;
+    transition-property: font-size, margin, width, height;
+    transition-duration: 0.3s;
+}
+
+@media screen and (min-width: 1200px) {
+    .gallerypic {
+      margin: 2.5em;
+    }
+
+    .gallerypic:hover {
+        height: 45em;
+        width: 35em;
+        margin: 0;
+    }
+
+    .gallerypic:hover p {
+        font-size: 1.5em;
+    }
+
+    .gallerypic:hover .imglink {
+        height: 38em;
+    }
+}
+
 .content {
     margin: 1em auto;
     font-family: 'Play', sans-serif;
@@ -166,4 +237,8 @@ a.video-message:hover {
 
 .content p {
   line-height: 160%;
+}
+
+img {
+  image-orientation: from-image
 }
