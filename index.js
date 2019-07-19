@@ -40,7 +40,7 @@ let copiedFile = (file) => (err) => {
 }
 
 // Go through all the pug files and render them
-glob("pug/*.pug", (er, files) => {
+let renderPug = (er, files) => {
     files.forEach(file => {
         if (file.endsWith("index.pug")) {
             var newFile = pug2html(file);
@@ -54,7 +54,9 @@ glob("pug/*.pug", (er, files) => {
 
         fs.writeFile(newFile, pug.renderFile(`${__dirname}/${file}`, site), ensureCompiled(newFile));
     });
-});
+};
+glob("pug/*.pug", renderPug);
+glob("pug/private/**/*.pug", renderPug);
 
 // Render projects
 let generateProject = project => {
