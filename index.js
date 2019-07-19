@@ -24,7 +24,7 @@ console.log(JSON.stringify(site, null, '  '));
 
 // Some helper functions
 let pug2html = (f) => f.replace("pug/", "build/").replace(".pug", ".html");
-let pugCompiled = (newFile) => (err) => {
+let ensureCompiled = (newFile) => (err) => {
     if (err) {
         console.error(`ERROR: FAILED TO WRITE TO ${newFile} (${err})`);
     }
@@ -52,7 +52,7 @@ glob("pug/*.pug", (er, files) => {
 
         console.log(`Compiling ${file} ...`);
 
-        fs.writeFile(newFile, pug.renderFile(`${__dirname}/${file}`, site), pugCompiled(newFile));
+        fs.writeFile(newFile, pug.renderFile(`${__dirname}/${file}`, site), ensureCompiled(newFile));
     });
 });
 
@@ -73,7 +73,7 @@ let generateProject = project => {
 
     try { fs.mkdirSync(newPath); } catch(_e) {}
 
-    fs.writeFile(newFile, pug.renderFile(pugFile, context), pugCompiled(newFile));
+    fs.writeFile(newFile, pug.renderFile(pugFile, context), ensureCompiled(newFile));
 }
 site.ldProjects.forEach(generateProject);
 site.schoolProjects.forEach(generateProject);
