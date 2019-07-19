@@ -159,7 +159,7 @@ ldProjects:
 
   - name: Interdimensional Corgi Fishing
     path: corgi-fishing
-    logline: Utilize a magic headlamp to see into the fish dimension.
+    logline: Use a magic headlamp to see into the fish dimension.
     image:
       src: /videos/corgi-preview.webm
       anchor: center
