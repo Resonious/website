@@ -1,0 +1,3 @@
+[submodule "submodules/Multifocus"]
+	path = submodules/Multifocus
+	url = git@github.com:Resonious/Multifocus
