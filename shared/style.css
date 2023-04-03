@@ -1,12 +1,26 @@
 body {
     /* background-color: #dcfffd; */
     /* text-shadow: 0.1em 0.1em white; */
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    --project-link-size: 326px;
+    --project-link-hover: 368px;
+}
+
+.site-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    max-width: 1600px;
 }
 
 .site-header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
 }
 
@@ -18,10 +32,11 @@ body {
 .site-header > .info {
     display: inline-flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     font-family: 'Play', sans-serif;
     text-align: left;
+    gap: 10px;
+    margin-bottom: 10px;
 }
 
 .site-header > h1.smallhead {
@@ -31,20 +46,11 @@ body {
 .info ul {
     list-style-type: none;
     margin: 0;
-    margin-left: 1em;
-    margin-right: 1em;
-    padding: 0.1em;
+    padding: 0;
 }
 
 .info ul li {
     padding: 0.1em;
-}
-
-.banner {
-    background-color: #c7c7c7;
-
-    border-top: 0.01em solid black;
-    border-bottom: 0.01em solid black;
 }
 
 .site-header > .banner > img {
@@ -55,8 +61,6 @@ body {
     .site-header > .banner {
         display: flex;
         flex-direction: row;
-
-        justify-content: center;
     }
 
     .site-header > .banner > img {
@@ -90,7 +94,6 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .video-div{
@@ -127,16 +130,15 @@ a.video-message:hover {
 }
 
 .project {
-    margin: 0;
     background-repeat:no-repeat;
 
     color: black;
     text-decoration: none;
 
-    width: 20em;
-    height: 20em;
+    width: var(--project-link-size);
+    height: var(--project-link-size);
     text-align: center;
-    margin: 1em;
+    margin: 0;
     font-family: 'Play', sans-serif;
 
     border: 3px solid black;
@@ -149,13 +151,24 @@ a.video-message:hover {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.project:hover h2 {
-    font-size: 2em;
+.project-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: var(--project-link-hover);
+    height: var(--project-link-hover);
+}
+
+.project-wrapper:hover .project {
+    font-size: 1.1em;
+    width: var(--project-link-hover);
+    height: var(--project-link-hover);
 }
 
 .project:hover {
     font-size: 1.1em;
-    margin: 0em;
 }
 
 .gallery {
@@ -175,7 +188,7 @@ a.video-message:hover {
     height: 40em;
     width: 30em;
 
-    margin: 0em;
+    margin: 0;
 
     transition-property: font-size, margin, width, height;
     transition-duration: 0.3s;

@@ -1,11 +1,12 @@
 if project.image.src.includes("/videos/")
-    div.project.video-div
-        div.video-block(style=`align-items: ${project.image.anchor == 'bottom' ? 'flex-end' : 'center'};`)
-            video.bgvid(muted="muted" loop="loop" height=project.image.height)
-                source(src=project.image.src)
-            a.video-message(href=`/projects/${project.path}`)
-                h2= project.name
-                p= project.logline
+    .project-wrapper
+        .project.video-div
+            .video-block(style=`align-items: ${project.image.anchor == 'bottom' ? 'flex-end' : 'center'};`)
+                video.bgvid(muted="muted" loop="loop" height=project.image.height)
+                    source(src=project.image.src)
+                a.video-message(href=`/projects/${project.path}`)
+                    h2= project.name
+                    p= project.logline
 else
     a.project(
         href=`/projects/${project.path}`,

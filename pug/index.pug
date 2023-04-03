@@ -3,27 +3,29 @@ html(lang="en")
     head
         include /head.pug
         title Nigel Baillie
+
+        script(src="/main.js", defer)
     body
-        include /site-header.pug
+        .site-container
+            include /site-header.pug
 
-        .project-group
-            h1 Game jam projects
+            .project-group
+                h1 Game jam projects
 
-            .projects
-                each project in ldProjects
-                    include /project-link.pug
+                .projects
+                    each project in ldProjects
+                        include /project-link.pug
 
-        .project-group
-            h1 School projects
+            .project-group
+                h1 School projects
 
-            .projects
-                each project in schoolProjects
-                    include /project-link.pug
+                .projects
+                    each project in schoolProjects
+                        include /project-link.pug
 
-        .project-group
-            h1 Noteworthy side projects
+            .project-group
+                h1 Noteworthy side projects
 
-            .projects
-                each project in sideProjects
-                    include /project-link.pug
-    script(src="/main.js")
+                .projects
+                    each project in sideProjects
+                        include /project-link.pug
