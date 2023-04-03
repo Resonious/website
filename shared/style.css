@@ -47,6 +47,10 @@ body {
     border-bottom: 0.01em solid black;
 }
 
+.site-header > .banner > img {
+    border-radius: 12px;
+}
+
 @media screen and (min-width: 350px) {
     .site-header > .banner {
         display: flex;

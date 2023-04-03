@@ -2,7 +2,7 @@
 
 My portfolio site. Very simple static website using pug.
 
-https://nigelbaillie.me
+https://nigelbaillie.me (maybe https://baillie.dev?)
 
 Build it by running `node index.js`. That'll generate a `build` directory which contains the whole website.
 

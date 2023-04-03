@@ -1,4 +1,3 @@
 #!/bin/bash
 
-# run `pip2 install when-changed` if this doesn't work
-exec when-changed -r js pug shared static -c node index.js
+ls static/* pug/* shared/* js/* images/* documents/* | entr -s 'echo "rebuilding..." && node index.js && echo "rebuild complete"'

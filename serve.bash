@@ -1,3 +1,3 @@
 #!/bin/bash
 
-nginx -p $PWD -c nginx/nginx.conf
+ruby -run -ehttpd build -p3003
