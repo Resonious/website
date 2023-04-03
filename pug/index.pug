@@ -9,23 +9,22 @@ html(lang="en")
         .site-container
             include /site-header.pug
 
+            .blog-posts
+                h1.smaller Blog posts
+                each post in blogPosts
+                    a.blog-link(href=post.path)
+                        .blog-link-bg
+                        .blog-link-content
+                            small=post.date
+                            span=post.title
+
             .project-group
-                h1 Game jam projects
+                h1.smaller Project portfolio
 
                 .projects
                     each project in ldProjects
                         include /project-link.pug
-
-            .project-group
-                h1 School projects
-
-                .projects
                     each project in schoolProjects
                         include /project-link.pug
-
-            .project-group
-                h1 Noteworthy side projects
-
-                .projects
                     each project in sideProjects
                         include /project-link.pug

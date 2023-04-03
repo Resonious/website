@@ -39,20 +39,59 @@ let copiedFile = (file) => (err) => {
         console.log(`Finished ${file}`);
 }
 
+site.blogPosts = [];
+// Render blog posts
+const blogPosts = new Promise((resolve, reject) => {
+    glob("documents/blog/**/*.md", (er, files) => {
+        files.sort()
+        files.reverse()
+        files.forEach(file => {
+            console.log(`Blog post ${file} ...`);
+
+            const filename = path.basename(file);
+
+            const date = filename.split('-').slice(0, 3).join('-');
+            const title = filename.split('-').slice(3)
+                              .map(s => s[0].toUpperCase() + s.slice(1))
+                              .join(' ')
+                              .replace('.md', '');
+
+            const slug = filename.replace('.md', '');
+            const pugFile = `${__dirname}/pug/blog/post.pug`;
+            const newPath = pug2html(pugFile.replace('post.pug', slug));
+            const newFile = `${newPath}/index.html`;
+            const blogPost = { title, date, path: `/blog/${slug}` };
+            site.blogPosts.push(blogPost);
+
+            fs.readFile(file, "utf8", (err, data) => {
+                blogPost.contents = markdown.toHTML(data);
+                const context = Object.assign({}, site, blogPost);
+
+                try { fs.mkdirSync(newPath); } catch(_e) {}
+
+                fs.writeFile(newFile, pug.renderFile(pugFile, context), ensureCompiled(newFile));
+            });
+        });
+        resolve(site.blogPosts);
+    });
+});
+
 // Go through all the pug files and render them
 let renderPug = (er, files) => {
-    files.forEach(file => {
-        if (file.endsWith("index.pug")) {
-            var newFile = pug2html(file);
-        } else {
-            let newPath = pug2html(file.replace(".pug", '/'));
-            var newFile = `${newPath}index.html`
-            try { fs.mkdirSync(newPath); } catch(_e) {}
-        }
+    blogPosts.then(() => {
+        files.forEach(file => {
+            if (file.endsWith("index.pug")) {
+                var newFile = pug2html(file);
+            } else {
+                let newPath = pug2html(file.replace(".pug", '/'));
+                var newFile = `${newPath}index.html`
+                try { fs.mkdirSync(newPath); } catch(_e) {}
+            }
 
-        console.log(`Compiling ${file} ...`);
+            console.log(`Compiling ${file} ...`);
 
-        fs.writeFile(newFile, pug.renderFile(`${__dirname}/${file}`, site), ensureCompiled(newFile));
+            fs.writeFile(newFile, pug.renderFile(`${__dirname}/${file}`, site), ensureCompiled(newFile));
+        });
     });
 };
 glob("pug/*.pug", renderPug);

@@ -1,3 +1,5 @@
 #!/bin/bash
 
-ls static/* pug/* shared/* js/* images/* documents/* | entr -s 'echo "rebuilding..." && node index.js && echo "rebuild complete"'
+echo index.js static/* pug/* shared/* js/* images/* documents/* \
+  | awk '{ gsub(" ", "\n"); print }' \
+  | entr -s 'echo "rebuilding..." && node index.js && echo "rebuild complete"'

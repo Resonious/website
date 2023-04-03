@@ -1,0 +1,17 @@
+# Do motivational posts help?
+
+Every once in awhile, I get the urge to start a blog. Interesting thoughts sometimes cross my mind, and I get the feeling they’d stick better if I write about them. I do actually write in my free time, but not usually in public. The fact that my writing is not public actually causes the quality to go down. A lot of the things I write down for myself are half-baked “shower thoughts”, not fully explored. Consider this blog an attempt to take those shower thoughts and fully bake them.
+
+When thinking about starting a blog, I immediately get hit with decision paralysis. What service do I use? Do I host it myself? I love to over-engineer side projects, and it seems blogging is no exception. In case it’s not clear, here are some “ways to blog”: Twitter, Mastodon, Medium, Substack, LinkedIn, Hey.com’s “World” feature, Static site on Netlify, Static site self-hosted, WordPress, … the list goes on. When I encounter such large lists, it tends to result in a hard stop. I just don’t do anything.
+
+The decision paralysis dilemma seems to be very common. So common that you see a lot of advice out there saying “just do it!!! just start, do anything at all!!”. For what it’s worth, I think that advice is correct. It’s correct, yet somehow not very persuasive. I’ll read something like that and think “yeah, that seems true”, but I basically never act on it. I’ve never looked at that advice and then immediately used it as motivation to start something. Thanks Twitter guy for the motivating words! is not something I’ve ever thought, despite often agreeing with what they say.
+
+Back in college, my physics professor once said to us something along the lines of: 
+
+> You don’t actually learn anything from me in class. Anything you learn is because you decided to get up and learn it.
+
+This struck me a bit. Not in a this is so true!! or no way!! sense - but rather in a wait, maybe that’s true.. but maybe it’s not sense. Sure, a motivated student will learn more than an unmotivated student. But for me at least, I felt like college provided me a lot of learning opportunities that I just wouldn’t know where to start with had I not been in college. I definitely would’ve known less physics had I not taken that particular instructor’s class, so surely I am learning from him in class.
+
+Looking back, I think my experience with motivational Tweeters is a pretty good example of what my physics professor was saying. If I manage to start a blog, it’s because I willingly put in the effort, not because of motivational tweets. Another good example might be quitting smoking. Quitting smoking is typically considered good. Even smokers usually agree with that. The cliche is that smokers believe they “can quit whenever they want”, which is similar to me agreeing with motivational posters. But they (stereotypical smokers) don’t quit, and I don’t start my blog. Professor says something, I say “cool ok”, but I don’t learn anything.
+
+Anyway, here’s the blog. In all likelihood, this will be the only post, or maybe a couple more with a cadence of a few months, then nothing for years. I’ve seen that happen a lot amongst peers and other industry folk. I have no reason to believe I’m much different from them. But here I am, finally taking up the motivational Tweeter’s advice. So maybe the motivational posts really do have an effect? I didn’t read any such posts before starting this blog, so even if they did have an effect, it was quite delayed.
