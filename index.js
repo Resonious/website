@@ -3,7 +3,7 @@ const fs = require("file-system");
 const rimraf = require("rimraf");
 const yaml = require('js-yaml');
 const pug = require('pug');
-const markdown = require('markdown').markdown;
+const markdown = require('markdown-it')();
 const path = require('path')
 
 const buildPath = `${__dirname}/build`;
@@ -64,7 +64,7 @@ const blogPosts = new Promise((resolve, reject) => {
             site.blogPosts.push(blogPost);
 
             fs.readFile(file, "utf8", (err, data) => {
-                blogPost.contents = markdown.toHTML(data);
+                blogPost.contents = markdown.render(data);
                 const context = Object.assign({}, site, blogPost);
 
                 try { fs.mkdirSync(newPath); } catch(_e) {}
@@ -109,7 +109,7 @@ let generateProject = project => {
     let context = Object.assign({}, site, { project: project });
 
     if (project.descriptionDoc) {
-        context.renderedDescription = markdown.toHTML(fs.readFileSync(`documents/${project.descriptionDoc}`, "utf8"));
+        context.renderedDescription = markdown.render(fs.readFileSync(`documents/${project.descriptionDoc}`, "utf8"));
     }
 
     try { fs.mkdirSync(newPath); } catch(_e) {}
