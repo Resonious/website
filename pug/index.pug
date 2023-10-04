@@ -10,7 +10,7 @@ html(lang="en")
             include /site-header.pug
 
             .blog-posts
-                h1.smaller Blog posts
+                h1.smaller Blog
                 each post in blogPosts
                     a.blog-link(href=post.path)
                         .blog-link-bg
@@ -19,7 +19,7 @@ html(lang="en")
                             span=post.title
 
             .project-group
-                h1.smaller Old game projects
+                h1.smaller Past Game Projects
 
                 .projects
                     each project in ldProjects
