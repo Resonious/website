@@ -15,6 +15,22 @@ github: https://github.com/Resonious
 
 # Project entries
 projects:
+  - name: hook.snd.one
+    path: sndone
+    logline: No-signup webhook inspector
+    image:
+      src: /videos/sndone-preview.webm
+      anchor: center
+      height: 350px
+    video:
+      src: /videos/sndone.webm
+    descriptionDoc: sndone-description.md
+    date: 2023
+    stack:
+      - Rust
+      - Hyper
+    source: https://github.com/Resonious/hook
+
   - name: Exposure
     path: exposurerb
     logline: Better intellisense for Ruby projects
