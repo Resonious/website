@@ -18,6 +18,16 @@ body {
   max-width: 1200px;
 }
 
+.site-container p {
+  font-family: 'Play', sans-serif;
+}
+
+.intro {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  max-width: 750px;
+}
+
 .site-header {
   display: flex;
   flex-direction: column;
