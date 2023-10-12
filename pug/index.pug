@@ -9,14 +9,26 @@ html(lang="en")
         .site-container
             include /site-header.pug
 
-            .blog-posts
-                h1.smaller Blog
-                each post in blogPosts
-                    a.blog-link(href=post.path)
-                        .blog-link-bg
-                        .blog-link-content
-                            small=post.date
-                            span=post.title
+            .top-half
+                .current-setup
+                    h1.smaller Dev Setup
+                    pre <span class='brkt'>{</span>
+                        |
+                        |  <span class='str'>"laptop"</span>:   "<a href='https://frame.work/'>Framework</a>",
+                        |  <span class='str'>"os"</span>:       "<a href='https://archlinux.org/'>Arch Linux</a>, <a href='https://swaywm.org/'>Sway</a>",
+                        |  <span class='str'>"terminal"</span>: "<a href='https://sw.kovidgoyal.net/kitty/'>kitty</a>",
+                        |  <span class='str'>"shell"</span>:    "<a href='https://www.nushell.sh/'>nushell</a>",
+                        |  <span class='str'>"editor"</span>:   "<a href='https://helix-editor.com/'>helix</a>"
+                        |<span class='brkt'>}</span>
+
+                .blog-posts
+                    h1.smaller Blog
+                    each post in blogPosts
+                        a.blog-link(href=post.path)
+                            .blog-link-bg
+                            .blog-link-content
+                                small=post.date
+                                span=post.title
 
             .project-group
                 h1.smaller Hobby Projects

@@ -302,6 +302,25 @@ img {
   image-orientation: from-image
 }
 
+.top-half {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 35px;
+}
+
+.current-setup pre {
+  font-size: 1rem;
+}
+
+.current-setup .str {
+  color: #153137;
+}
+
+.current-setup .brkt {
+  font-weight: bold;
+}
+
 .blog-posts {
   margin-bottom: 2em;
 }
