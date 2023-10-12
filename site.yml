@@ -38,7 +38,7 @@ schoolProjects:
     video:
       src: /videos/oato-gameplay.webm
     description:
-      - This was a solo project for U-M's EECS 494. The goal of the project was to come up
+      - This was a solo project for the University of Michigan's EECS 494. The goal of the project was to come up
         with a novel idea, and thoroughly explore it in a playable prototype.
       - My original idea was something along the lines of having real time combat where players
         controlled multiple characters. I was thinking along the lines of recording a routine
