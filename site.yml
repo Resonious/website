@@ -29,10 +29,15 @@ projects:
         the package manager will create a desktop launcher for any app you install. But what if I want to skip
         the package manager and install something from source? Remembering how .desktop files work and where
         to put them was never my strong suit. This `mkdesktop` app provides a GUI for creating custom app launchers.
+      - I built this using Rust and GTK. It also works as a CLI, letting you CRUD your custom desktop launchers
+        from your shell as well. The GUI is GTK, put together using the Glade editor.
+      - The app uses xdg-desktop-menu under the hood, and so it will work with any Linux desktop. When I first
+      - built this, I was using GNOME, and now I'm on Sway and it still works like a dream.
     date: 2019
     stack:
       - Rust
-      - GTK4
+      - GTK3
+      - Builder
     source: https://github.com/Resonious/mkdesktop
 
   - name: Crattlecrute
