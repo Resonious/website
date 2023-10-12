@@ -185,32 +185,6 @@ projects:
     link: https://github.com/Resonious/dwtd/releases/tag/ld33
     entry: http://ludumdare.com/compo/ludum-dare-33/?action=preview&uid=38940
 
-  - name: Gray Area
-    path: gray-area
-    logline: Navigate the world and its inverse.
-    image:
-      src: /videos/gray-area-preview.webm
-      anchor: center
-      height: 400px
-    video:
-      src: /videos/gray-area-good-fixed.webm
-    description:
-      - My entry for Ludum Dare 30. This was my first Ludum Dare entry, and probably
-        my first ever full game. I had done game development before this but never
-        actually finished anything. I suppose the 48 hour time limit pushed me over
-        the edge.
-      - The game is mostly just black and white. There is a black character, and a white character.
-        The black character only collides with black shapes and vice versa. The fun part is that,
-        for instance, a black shape can overlap another black shape, creating a new opening for the
-        white character to jump into.
-    date: August 2014
-    stack:
-      - '<a target="_blank" href="https://livescript.net/">LiveScript</a> (obscure functional-style CoffeeScript)'
-      - '<a target="_blank" href="https://phaser.io/">Phaser</a>'
-    source: https://github.com/Resonious/gray-area
-    link: http://resonious.github.io/gray-area/
-    entry: http://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=38940
-
   - name: Breaker
     path: breaker
     logline: Punch blocks until you die.
@@ -239,3 +213,29 @@ projects:
     source: https://github.com/Resonious/breaker
     link: http://resonious.github.io/breaker
     entry: http://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=38940
+
+  - name: Gray Area
+    path: gray-area
+    logline: Navigate the world and its inverse.
+    image:
+      src: /videos/gray-area-preview.webm
+      anchor: center
+      height: 400px
+    video:
+      src: /videos/gray-area-good-fixed.webm
+    description:
+      - My entry for Ludum Dare 30. This was my first Ludum Dare entry, and probably
+        my first ever full game. I had done game development before this but never
+        actually finished anything. I suppose the 48 hour time limit pushed me over
+        the edge.
+      - The game is mostly just black and white. There is a black character, and a white character.
+        The black character only collides with black shapes and vice versa. The fun part is that,
+        for instance, a black shape can overlap another black shape, creating a new opening for the
+        white character to jump into.
+    date: August 2014
+    stack:
+      - '<a target="_blank" href="https://livescript.net/">LiveScript</a> (obscure functional-style CoffeeScript)'
+      - '<a target="_blank" href="https://phaser.io/">Phaser</a>'
+    source: https://github.com/Resonious/gray-area
+    link: http://resonious.github.io/gray-area/
+    entry: http://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=38940
