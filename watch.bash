@@ -2,4 +2,4 @@
 
 echo index.js static/* pug/* shared/* js/* images/* documents/* documents/blog/*.md \
   | awk '{ gsub(" ", "\n"); print }' \
-  | entr -s 'echo "rebuilding..." && node index.js && echo "rebuild complete"'
+  | entr -s 'bash -c "echo rebuilding... && node index.js && echo rebuild complete"'
