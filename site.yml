@@ -15,13 +15,29 @@ github: https://github.com/Resonious
 
 # Project entries
 projects:
+  - name: Exposure
+    path: exposurerb
+    logline: Better intellisense for Ruby projects
+    image:
+      src: /videos/exposure-preview.webm
+      anchor: bottom
+      height: 400px
+    video:
+      src: /videos/exposure.webm
+    descriptionDoc: exposure-description.md
+    date: 2022
+    stack:
+      - Ruby
+      - C
+    source: https://github.com/Resonious/exposure
+
   - name: mkdesktop
     path: mkdesktop
     logline: Linux app for managing .desktop files
     image:
       src: /videos/mkdesktop-preview.webm
       anchor: center
-      height: 330x
+      height: 330px
     video:
       src: /videos/mkdesktop.mp4
     description:

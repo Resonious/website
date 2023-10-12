@@ -6,7 +6,7 @@ html(lang="en")
     body
         include /site-header.pug
 
-        .content
+        article.content
             h2=project.name
 
             video(src=project.video.src, type="video/webm", controls)
@@ -14,7 +14,7 @@ html(lang="en")
 
             if project.description
                 each paragraph in project.description
-                    p=paragraph
+                    p !{paragraph}
             if renderedDescription
                 != renderedDescription
         
