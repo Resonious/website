@@ -14,10 +14,30 @@ email: nigel@baillie.dev
 github: https://github.com/Resonious
 
 # Project entries
-sideProjects:
+projects:
+  - name: mkdesktop
+    path: mkdesktop
+    logline: Linux app for managing .desktop files
+    image:
+      src: /videos/mkdesktop-preview.webm
+      anchor: center
+      height: 330x
+    video:
+      src: /videos/mkdesktop.mp4
+    description:
+      - I run Linux on my daily driver. Usually, the built-in package manager works like a dream. Most notably,
+        the package manager will create a desktop launcher for any app you install. But what if I want to skip
+        the package manager and install something from source? Remembering how .desktop files work and where
+        to put them was never my strong suit. This `mkdesktop` app provides a GUI for creating custom app launchers.
+    date: 2019
+    stack:
+      - Rust
+      - GTK4
+    source: https://github.com/Resonious/mkdesktop
+
   - name: Crattlecrute
     path: crattlecrute
-    logline: An unfinished attempt to create a game "from scratch"
+    logline: '"From scratch" game project, online play and custom physics'
     image:
       src: /videos/crattlecrute-preview.webm
       anchor: center
@@ -25,9 +45,17 @@ sideProjects:
     video:
       src: /videos/crattlecrute-gameplay.webm
     descriptionDoc: crattlecrute-description.md
+    date: 2015 - 2016
+    stack:
+      - C
+      - '<a target=_blank href="https://www.libsdl.org/index.php">SDL2</a>'
+      - '<a target="_blank" href="http://www.raknet.com/">RakNet</a>'
+      - '<a href="https://github.com/nothings/stb/blob/master/stb_image.h">stb_image</a>'
+      - '<a href="https://github.com/nothings/stb/blob/master/stb_vorbis.c">stb_vorbis</a>'
+      - '<a href="https://github.com/mruby/mruby">MRuby</a>'
+      - '<a href="http://www.pcg-random.org/">PCG RNG</a>'
     source: https://github.com/Resonious/crattlecrute
 
-schoolProjects:
   - name: One After Another
     path: one-after-another
     logline: Cooperate with your past self.
@@ -53,6 +81,10 @@ schoolProjects:
         Instead of recording controls and switching between characters, however, I made it so
         that once you reach the end of a level, you respawn at the beginning alongside a ghost
         of your previous run.
+    date: 2017
+    stack:
+      - C#
+      - '<a target="_blank" href="https://unity.com">Unity</a>'
     link: https://drive.google.com/file/d/1phdvL61pEeFksbCAzC4vA7MpSdcvbsqG/view?usp=sharing
 
   - name: Wrecked
@@ -74,10 +106,13 @@ schoolProjects:
         and quickly engaging, similar to old arcade games. We figured a four player competitive
         game was a good fit, and decided to go with an over-the-top insane type of theme.
         So, flying construction vehicles with wrecking balls it was.
-      - Also, yes, I did the voiceover for that trailer.
+      - Pretty embarrassing, but I did the voiceover for that trailer.
+    date: 2017
+    stack:
+      - C#
+      - '<a target="_blank" href="https://unity.com">Unity</a>'
     link: https://drive.google.com/file/d/1YEMy9K25qMliJfmSa2uLyH7G1Z-rnMuD/view?usp=sharing
 
-ldProjects:
   - name: Gray Area
     path: gray-area
     logline: Navigate the world and its inverse.
@@ -96,6 +131,10 @@ ldProjects:
         The black character only collides with black shapes and vice versa. The fun part is that,
         for instance, a black shape can overlap another black shape, creating a new opening for the
         white character to jump into.
+    date: August 2014
+    stack:
+      - '<a target="_blank" href="https://livescript.net/">LiveScript</a> (obscure functional-style CoffeeScript)'
+      - '<a target="_blank" href="https://phaser.io/">Phaser</a>'
     source: https://github.com/Resonious/gray-area
     link: http://resonious.github.io/gray-area/
     entry: http://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=38940
@@ -121,6 +160,10 @@ ldProjects:
         break, a bomb block that explodes 3 seconds after taking damage, and a chest block that
         reveals a powerup upon breaking.
       - 'This one turned out rather fun, I think. It got rated #90 in the "fun" category for LD31.'
+    date: December 2014
+    stack:
+      - '<a target="_blank" href="https://livescript.net/">LiveScript</a> (obscure functional-style CoffeeScript)'
+      - '<a target="_blank" href="https://phaser.io/">Phaser</a>'
     source: https://github.com/Resonious/breaker
     link: http://resonious.github.io/breaker
     entry: http://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=38940
@@ -135,34 +178,11 @@ ldProjects:
     video:
       src: /videos/dwtd-good-fixed.webm
     descriptionDoc: dwtd-description.md
+    date: 2015
+    stack:
+      - C++ (C-like style, 1 big file)
+      - '<a target="_blank" href="https://www.libsdl.org/">SDL2</a>'
+      - '<a target="_blank" href="http://www.raknet.com/">RakNet</a>'
     source: https://github.com/Resonious/dwtd
     link: https://github.com/Resonious/dwtd/releases/tag/ld33
     entry: http://ludumdare.com/compo/ludum-dare-33/?action=preview&uid=38940
-
-  - name: Interdimensional Corgi Fishing
-    path: corgi-fishing
-    logline: Use a magic headlamp to see into the fish dimension.
-    image:
-      src: /videos/corgi-preview.webm
-      anchor: center
-      height: '464px'
-    video:
-      src: /videos/corgi-gameplay.webm
-    description:
-      - My (and team's) entry for the 2nd Alakajam! The theme was "You can't see everything".
-        I ended up with a team much larger than originally anticipated for this one (6 people!),
-        which worried me as I suspected communicating with people would use up a lot of time.
-        Surely enough, communicating with people did take up a fair amount of time, but the
-        productivity boost of the large team proved to make up the difference! Plus it was a
-        lot of fun.
-      - Admittedly this game's concept is quite bizarre. Our original idea included being
-        able to collect magic glasses that change the world when worn, and as a result of
-        narrowing things down, it became using a headlamp to view a small portion of another
-        world and swap things to and from that world. Because it took us so long to come up
-        with enough of a concept to get started, we delayed coming up with any actual gameplay
-        until rather late in the jam (and night). It occurred to us after the matter that
-        it's maybe strange to collect a bunch of fish in buckets, and then leave the fish
-        behind and eat regular dog food.
-      - "Team: Nigel Baillie, Jennifer Dailey, Nathan Korth, Daniel Korth, Joe Ambrose, and Sundari Butkiewicz."
-    link: https://drive.google.com/file/d/1X0A7wivRNggnGpp7IWO0U2bauzYuEIgQ/view?usp=sharing
-    entry: https://alakajam.com/2nd-alakajam/172/interdimensional-corgi-fishing/

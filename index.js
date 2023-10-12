@@ -116,9 +116,7 @@ let generateProject = project => {
 
     fs.writeFile(newFile, pug.renderFile(pugFile, context), ensureCompiled(newFile));
 }
-site.ldProjects.forEach(generateProject);
-site.schoolProjects.forEach(generateProject);
-site.sideProjects.forEach(generateProject);
+site.projects.forEach(generateProject);
 
 // Copy over all css files
 glob("css/**/*.css", (er, files) => {

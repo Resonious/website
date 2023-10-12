@@ -19,12 +19,8 @@ html(lang="en")
                             span=post.title
 
             .project-group
-                h1.smaller Past Game Projects
+                h1.smaller Hobby Projects
 
                 .projects
-                    each project in ldProjects
-                        include /project-link.pug
-                    each project in schoolProjects
-                        include /project-link.pug
-                    each project in sideProjects
+                    each project in projects
                         include /project-link.pug
