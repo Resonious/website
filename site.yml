@@ -15,6 +15,22 @@ github: https://github.com/Resonious
 
 # Project entries
 projects:
+  - name: riregi
+    path: riregi
+    logline: Offline cash register app - data layer in Zig
+    image:
+      src: /videos/riregi-preview.webm
+      anchor: top
+      height: 500px
+    video:
+      src: /videos/riregi.webm
+    descriptionDoc: riregi-description.md
+    date: 2023
+    stack:
+      - Dart
+      - Flutter
+      - Zig
+
   - name: hook.snd.one
     path: sndone
     logline: No-signup webhook inspector

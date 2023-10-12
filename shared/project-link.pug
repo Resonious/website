@@ -1,7 +1,7 @@
 if project.image.src.includes("/videos/")
     .project-video-preview-wrapper
         .project.video-div
-            .video-block(style=`align-items: ${project.image.anchor == 'bottom' ? 'flex-end' : 'center'};`)
+            .video-block(style=`align-items: ${project.image.anchor == 'bottom' ? 'flex-end' : project.image.anchor == 'top' ? 'flex-start' : 'center'};`)
                 video.bgvid(muted="muted" loop="loop" height=project.image.height)
                     source(src=project.image.src)
                 a.video-message(href=`/projects/${project.path}`)
