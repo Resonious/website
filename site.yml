@@ -88,27 +88,6 @@ projects:
       - Builder
     source: https://github.com/Resonious/mkdesktop
 
-  - name: Crattlecrute
-    path: crattlecrute
-    logline: '"From scratch" game project, online play and custom physics'
-    image:
-      src: /videos/crattlecrute-preview.webm
-      anchor: center
-      height: 500px
-    video:
-      src: /videos/crattlecrute-gameplay.webm
-    descriptionDoc: crattlecrute-description.md
-    date: 2015 - 2016
-    stack:
-      - C
-      - '<a target=_blank href="https://www.libsdl.org/index.php">SDL2</a>'
-      - '<a target="_blank" href="http://www.raknet.com/">RakNet</a>'
-      - '<a href="https://github.com/nothings/stb/blob/master/stb_image.h">stb_image</a>'
-      - '<a href="https://github.com/nothings/stb/blob/master/stb_vorbis.c">stb_vorbis</a>'
-      - '<a href="https://github.com/mruby/mruby">MRuby</a>'
-      - '<a href="http://www.pcg-random.org/">PCG RNG</a>'
-    source: https://github.com/Resonious/crattlecrute
-
   - name: One After Another
     path: one-after-another
     logline: Cooperate with your past self.
@@ -166,6 +145,46 @@ projects:
       - '<a target="_blank" href="https://unity.com">Unity</a>'
     link: https://drive.google.com/file/d/1YEMy9K25qMliJfmSa2uLyH7G1Z-rnMuD/view?usp=sharing
 
+  - name: Crattlecrute
+    path: crattlecrute
+    logline: '"From scratch" game project, online play and custom physics'
+    image:
+      src: /videos/crattlecrute-preview.webm
+      anchor: center
+      height: 500px
+    video:
+      src: /videos/crattlecrute-gameplay.webm
+    descriptionDoc: crattlecrute-description.md
+    date: 2015 - 2016
+    stack:
+      - C
+      - '<a target=_blank href="https://www.libsdl.org/index.php">SDL2</a>'
+      - '<a target="_blank" href="http://www.raknet.com/">RakNet</a>'
+      - '<a href="https://github.com/nothings/stb/blob/master/stb_image.h">stb_image</a>'
+      - '<a href="https://github.com/nothings/stb/blob/master/stb_vorbis.c">stb_vorbis</a>'
+      - '<a href="https://github.com/mruby/mruby">MRuby</a>'
+      - '<a href="http://www.pcg-random.org/">PCG RNG</a>'
+    source: https://github.com/Resonious/crattlecrute
+
+  - name: A Duel with The Devil
+    path: a-duel-with-the-devil
+    logline: Side-view grid-based tactical combat.
+    image:
+      src: /videos/dwtd-preview.webm
+      anchor: center
+      height: 400px
+    video:
+      src: /videos/dwtd-good-fixed.webm
+    descriptionDoc: dwtd-description.md
+    date: 2015
+    stack:
+      - C++ (C-like style, 1 big file)
+      - '<a target="_blank" href="https://www.libsdl.org/">SDL2</a>'
+      - '<a target="_blank" href="http://www.raknet.com/">RakNet</a>'
+    source: https://github.com/Resonious/dwtd
+    link: https://github.com/Resonious/dwtd/releases/tag/ld33
+    entry: http://ludumdare.com/compo/ludum-dare-33/?action=preview&uid=38940
+
   - name: Gray Area
     path: gray-area
     logline: Navigate the world and its inverse.
@@ -220,22 +239,3 @@ projects:
     source: https://github.com/Resonious/breaker
     link: http://resonious.github.io/breaker
     entry: http://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=38940
-
-  - name: A Duel with The Devil
-    path: a-duel-with-the-devil
-    logline: Side-view grid-based tactical combat.
-    image:
-      src: /videos/dwtd-preview.webm
-      anchor: center
-      height: 400px
-    video:
-      src: /videos/dwtd-good-fixed.webm
-    descriptionDoc: dwtd-description.md
-    date: 2015
-    stack:
-      - C++ (C-like style, 1 big file)
-      - '<a target="_blank" href="https://www.libsdl.org/">SDL2</a>'
-      - '<a target="_blank" href="http://www.raknet.com/">RakNet</a>'
-    source: https://github.com/Resonious/dwtd
-    link: https://github.com/Resonious/dwtd/releases/tag/ld33
-    entry: http://ludumdare.com/compo/ludum-dare-33/?action=preview&uid=38940
