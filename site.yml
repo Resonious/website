@@ -16,6 +16,22 @@ resume: /NigelBaillieSoftwareEngineer.pdf
 
 # Project entries
 projects:
+  - name: Teleport
+    path: teleport
+    logline: VR remote presence
+    image:
+      src: /videos/teleport-preview.webm
+      anchor: center
+      height: 370px
+    video:
+      src: /videos/teleport-vr.webm
+    descriptionDoc: teleport-description.md
+    date: 2023
+    stack:
+      - WebRTC
+      - TypeScript
+      - THREE.js
+
   - name: riregi
     path: riregi
     logline: Offline cash register app - data layer in Zig
