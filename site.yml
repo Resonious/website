@@ -34,7 +34,7 @@ projects:
 
   - name: riregi
     path: riregi
-    logline: Offline cash register app - data layer in Zig
+    logline: Offline cash register app - built with Flutter and Zig (!?)
     image:
       src: /videos/riregi-preview.webm
       anchor: top
