@@ -28,13 +28,14 @@ projects:
     descriptionDoc: teleport-description.md
     date: 2023
     stack:
-      - WebRTC
       - TypeScript
+      - WebRTC
       - THREE.js
+      - Raspberry Pi
 
   - name: riregi
     path: riregi
-    logline: Offline cash register app - built with Flutter and Zig (!?)
+    logline: Offline cash register app
     image:
       src: /videos/riregi-preview.webm
       anchor: top
@@ -76,8 +77,8 @@ projects:
     descriptionDoc: exposure-description.md
     date: 2022
     stack:
-      - Ruby
       - C
+      - Ruby
     source: https://github.com/Resonious/exposure
 
   - name: mkdesktop
@@ -133,7 +134,7 @@ projects:
     date: 2017
     stack:
       - C#
-      - '<a target="_blank" href="https://unity.com">Unity</a>'
+      - Unity
     link: https://drive.google.com/file/d/1phdvL61pEeFksbCAzC4vA7MpSdcvbsqG/view?usp=sharing
 
   - name: Wrecked
@@ -159,7 +160,7 @@ projects:
     date: 2017
     stack:
       - C#
-      - '<a target="_blank" href="https://unity.com">Unity</a>'
+      - Unity
     link: https://drive.google.com/file/d/1YEMy9K25qMliJfmSa2uLyH7G1Z-rnMuD/view?usp=sharing
 
   - name: Crattlecrute
@@ -175,12 +176,9 @@ projects:
     date: 2015 - 2016
     stack:
       - C
-      - '<a target=_blank href="https://www.libsdl.org/index.php">SDL2</a>'
-      - '<a target="_blank" href="http://www.raknet.com/">RakNet</a>'
-      - '<a href="https://github.com/nothings/stb/blob/master/stb_image.h">stb_image</a>'
-      - '<a href="https://github.com/nothings/stb/blob/master/stb_vorbis.c">stb_vorbis</a>'
-      - '<a href="https://github.com/mruby/mruby">MRuby</a>'
-      - '<a href="http://www.pcg-random.org/">PCG RNG</a>'
+      - 'SDL2'
+      - 'RakNet'
+      - 'MRuby'
     source: https://github.com/Resonious/crattlecrute
 
   - name: A Duel with The Devil
@@ -195,9 +193,9 @@ projects:
     descriptionDoc: dwtd-description.md
     date: 2015
     stack:
-      - C++ (C-like style, 1 big file)
-      - '<a target="_blank" href="https://www.libsdl.org/">SDL2</a>'
-      - '<a target="_blank" href="http://www.raknet.com/">RakNet</a>'
+      - C++
+      - 'SDL2'
+      - 'RakNet'
     source: https://github.com/Resonious/dwtd
     link: https://github.com/Resonious/dwtd/releases/tag/ld33
     entry: http://ludumdare.com/compo/ludum-dare-33/?action=preview&uid=38940
@@ -225,8 +223,8 @@ projects:
       - 'This one turned out rather fun, I think. It got rated #90 in the "fun" category for LD31.'
     date: December 2014
     stack:
-      - '<a target="_blank" href="https://livescript.net/">LiveScript</a> (obscure functional-style CoffeeScript)'
-      - '<a target="_blank" href="https://phaser.io/">Phaser</a>'
+      - 'LiveScript'
+      - 'Phaser'
     source: https://github.com/Resonious/breaker
     link: http://resonious.github.io/breaker
     entry: http://ludumdare.com/compo/ludum-dare-31/?action=preview&uid=38940
@@ -251,8 +249,8 @@ projects:
         white character to jump into.
     date: August 2014
     stack:
-      - '<a target="_blank" href="https://livescript.net/">LiveScript</a> (obscure functional-style CoffeeScript)'
-      - '<a target="_blank" href="https://phaser.io/">Phaser</a>'
+      - 'LiveScript'
+      - 'Phaser'
     source: https://github.com/Resonious/gray-area
     link: http://resonious.github.io/gray-area/
     entry: http://ludumdare.com/compo/ludum-dare-30/?action=preview&uid=38940

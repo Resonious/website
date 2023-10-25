@@ -7,7 +7,11 @@ if project.image.src.includes("/videos/")
                 a.video-message(href=`/projects/${project.path}`)
                     h2= project.name
                     p= project.logline
-                .date= project.date
+                .project-more
+                    ul
+                        each s in project.stack
+                            li= s
+                    span= project.date
 else
     a.project(
         href=`/projects/${project.path}`,

@@ -106,7 +106,13 @@ h1.smaller {
   flex-wrap: wrap;
 }
 
-.date {
+.project-more {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  justify-content: space-between;
+  align-items: end;
+
   position: absolute;
   bottom: 10px;
   font-size: 1.1rem;
@@ -118,6 +124,13 @@ h1.smaller {
     0.7px -0.7px 0 #fff,
     -0.7px 0.7px 0 #fff,
     0.7px 0.7px 0 #fff;
+}
+
+.project-more ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: left;
 }
 
 .video-div {
