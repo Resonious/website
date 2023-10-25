@@ -3,7 +3,9 @@ On the remote end, there's a camera with a "neck" that can look around. On
 the local end, a VR headset. Put on the headset to see what the camera sees -
 and you can turn your head.
 
-The video streaming is just WebRTC, the VR part THREEjs. This combo works amazingly
+<video controls type="video/webm" src="/videos/teleport-preview-full.webm"></video>
+
+The video streaming is WebRTC, the VR part THREEjs. This combo works amazingly
 well - WebRTC "just works" and makes it trivial to set up video streaming. THREE
 makes it painfully simple to [pipe a WebRTC video into a texture](https://threejs.org/docs/index.html#api/en/textures/VideoTexture)
 and render it in VR.

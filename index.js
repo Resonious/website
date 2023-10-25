@@ -3,7 +3,9 @@ const fs = require("file-system");
 const rimraf = require("rimraf");
 const yaml = require('js-yaml');
 const pug = require('pug');
-const markdown = require('markdown-it')();
+const markdown = require('markdown-it')({
+    html: true,
+});
 const path = require('path')
 
 const buildPath = `${__dirname}/build`;
