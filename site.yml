@@ -108,7 +108,7 @@ projects:
 
   - name: Interdimensional Corgi Fishing
     path: corgi-fishing
-    logline: Use a magic headlamp to see into the fish dimension.
+    logline: Use a magic headlamp to see into the fish dimension
     image:
       src: /videos/corgi-preview.webm
       anchor: center
@@ -140,7 +140,7 @@ projects:
 
   - name: One After Another
     path: one-after-another
-    logline: Cooperate with your past self.
+    logline: Cooperate with your past self
     image:
       src: /videos/oato-preview.webm
       anchor: center
@@ -171,7 +171,7 @@ projects:
 
   - name: Wrecked
     path: wrecked
-    logline: Demolish your friends with jet-powered construction vehicles.
+    logline: Demolish your friends with jet-powered construction vehicles
     image:
       src: /videos/wrecked-preview.webm
       anchor: bottom
@@ -215,7 +215,7 @@ projects:
 
   - name: A Duel with The Devil
     path: a-duel-with-the-devil
-    logline: Side-view grid-based tactical combat.
+    logline: Side-view grid-based tactical combat
     image:
       src: /videos/dwtd-preview.webm
       anchor: center
@@ -234,7 +234,7 @@ projects:
 
   - name: Breaker
     path: breaker
-    logline: Punch blocks until you die.
+    logline: Punch blocks until you die
     image:
       src: /videos/breaker-preview.webm
       anchor: bottom
@@ -263,7 +263,7 @@ projects:
 
   - name: Gray Area
     path: gray-area
-    logline: Navigate the world and its inverse.
+    logline: Navigate the world and its inverse
     image:
       src: /videos/gray-area-preview.webm
       anchor: center
