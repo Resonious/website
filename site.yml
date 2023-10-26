@@ -114,7 +114,7 @@ projects:
       anchor: center
       height: 600px
     video:
-      src: /videos/oato-gameplay.webm
+      src: /videos/oato-gameplay2.webm
     description:
       - This was a solo project for the University of Michigan's EECS 494. The goal of the project was to come up
         with a novel idea, and thoroughly explore it in a playable prototype.
