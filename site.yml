@@ -171,7 +171,7 @@ projects:
       anchor: center
       height: 500px
     video:
-      src: /videos/crattlecrute-gameplay.webm
+      src: /videos/crattlecrute-gameplay2.webm
     descriptionDoc: crattlecrute-description.md
     date: 2015 - 2016
     stack:
