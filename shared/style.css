@@ -310,7 +310,8 @@ a.video-message:hover {
 }
 
 .content h3 {
-  font-size: 1.5em;
+  font-size: 1.5rem;
+  margin-bottom: 4px;
 }
 
 .content h4 {

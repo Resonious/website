@@ -81,6 +81,22 @@ projects:
       - Ruby
     source: https://github.com/Resonious/exposure
 
+  - name: Dictionarian
+    path: dictionarian
+    logline: Quickly lookup hard-to-write characters
+    image:
+      src: /videos/dict-short.webm
+      anchor: center
+      height: 500px
+    video:
+      src: /videos/dict-long.webm
+    descriptionDoc: dict-description.md
+    date: 2020
+    stack:
+      - Kotlin
+      - Jetpack Compose
+    source: https://github.com/Resonious/Dictionarian
+
   - name: mkdesktop
     path: mkdesktop
     logline: Linux app for managing .desktop files
