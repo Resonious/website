@@ -48,6 +48,7 @@ projects:
       - Dart
       - Flutter
       - Zig
+    source: https://github.com/Resonious/riregi
 
   - name: hook.snd.one
     path: sndone
